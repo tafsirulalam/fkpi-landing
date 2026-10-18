@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FactorKPI | Real-Time Shop Floor Intelligence for Modern Manufacturing</title>
+  <meta name="description" content="Connect machines, empower frontline workers, and eliminate downtime with an all-in-one KPI platform built for industrial precision.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#" class="nav-brand" aria-label="FactorKPI Home">
+        <img src="assets/factorkpi-logo.png" alt="FactorKPI Logo" class="brand-logo" width="164" height="55">
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#product" class="nav-link active" aria-current="page">Product</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+        <div class="nav-actions-mobile">
+          <a href="#demo" class="btn btn-primary btn-book-demo">Book a Demo</a>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#demo" class="btn btn-primary btn-book-demo">Book a Demo</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <!-- Hero Left Copy -->
+        <div class="hero-copy">
+          <div class="hero-rating-badge">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <img src="assets/star.svg" alt="" class="star-icon" width="16" height="16">
+              <img src="assets/star.svg" alt="" class="star-icon" width="16" height="16">
+              <img src="assets/star.svg" alt="" class="star-icon" width="16" height="16">
+              <img src="assets/star.svg" alt="" class="star-icon" width="16" height="16">
+              <img src="assets/star.svg" alt="" class="star-icon" width="16" height="16">
+            </div>
+            <span class="rating-text">Rated 5/5 by 2,000+ plant managers</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="highlight">Track</span> every unit. <span class="highlight">Measure</span> every shift. <span class="highlight">Grow</span> every team.
+          </h1>
+
+          <p class="hero-subtitle">
+            Real-time shift tracking, automated reporting, and team performance workflows — purpose-built for industrial operations.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#demo" class="btn btn-primary btn-hero-cta">Get a Free Demo</a>
+            <a href="#showcase" class="btn btn-secondary btn-see-works">
+              <img src="assets/play-circle.svg" alt="" class="btn-icon" width="16" height="16">
+              <span>See How It Works</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Visual Composition -->
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Background Abstract Geometry -->
+          <div class="decor-shape decor-pill"></div>
+          <div class="decor-shape decor-circle-large"></div>
+          <div class="decor-shape decor-circle-small"></div>
+
+          <!-- Card 1: OEE Score Live -->
+          <div class="hero-card kpi-card">
+            <div class="kpi-card-header">
+              <span class="card-eyebrow">OEE Score</span>
+              <span class="badge-live-pulse">LIVE</span>
+            </div>
+            <div class="kpi-gauge-wrap">
+              <svg class="oee-gauge" viewBox="0 0 100 60" width="100" height="60">
+                <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#E5E7EB" stroke-width="8" stroke-linecap="round"/>
+                <path d="M 10 50 A 40 40 0 0 1 77 22" fill="none" stroke="#F97316" stroke-width="8" stroke-linecap="round"/>
+              </svg>
+              <span class="gauge-value">84%</span>
+            </div>
+            <div class="kpi-breakdown-row">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Availability</span>
+                <span class="breakdown-val">91%</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Performance</span>
+                <span class="breakdown-val">88%</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Quality</span>
+                <span class="breakdown-val">96%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Units Produced -->
+          <div class="hero-card output-card">
+            <span class="card-eyebrow">Units Produced</span>
+            <span class="output-stat">$14,280</span>
+            <div class="stat-trend-row">
+              <img src="assets/trending-up.svg" alt="" width="12" height="12">
+              <span class="trend-positive">+12.4%</span>
+              <span class="trend-sub">vs last shift</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Shift Handoff -->
+          <div class="hero-card shift-card">
+            <div class="shift-card-header">
+              <span class="card-title-sm">Shift Handoff</span>
+              <span class="icon-bubble orange-bubble">
+                <img src="assets/plus.svg" alt="" width="12" height="12">
+              </span>
+            </div>
+            <div class="avatar-stack-row">
+              <div class="avatar-stack">
+                <img src="assets/avatar-1.png" alt="Operator" class="avatar-img" width="32" height="32">
+                <img src="assets/avatar-2.png" alt="Supervisor" class="avatar-img" width="32" height="32">
+                <img src="assets/avatar-3.png" alt="Lead" class="avatar-img" width="32" height="32">
+                <span class="avatar-badge">+4</span>
+              </div>
+            </div>
+            <div class="shift-progress-wrap">
+              <span class="shift-label">Shift B → Shift C • 06:00</span>
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Downtime Alert -->
+          <div class="hero-card alert-card">
+            <div class="alert-top">
+              <div class="alert-icon-square">
+                <img src="assets/alert-triangle.svg" alt="" width="14" height="14">
+              </div>
+              <div class="alert-text-group">
+                <span class="alert-title">Downtime Alert</span>
+                <span class="alert-sub">Line 3 - Conveyor</span>
+              </div>
+            </div>
+            <div class="alert-meta-row">
+              <span class="alert-meta-label">Duration</span>
+              <span class="alert-meta-val">14 min</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Site Output Chart -->
+          <div class="hero-card chart-card">
+            <div class="chart-header-row">
+              <span class="card-title-sm">Site Output</span>
+              <span class="chart-timeframe">30 days</span>
+            </div>
+            <div class="mini-bar-chart">
+              <div class="bar-col" style="height: 20px;"></div>
+              <div class="bar-col" style="height: 30px;"></div>
+              <div class="bar-col" style="height: 22px;"></div>
+              <div class="bar-col active-bar" style="height: 40px;"></div>
+              <div class="bar-col" style="height: 35px;"></div>
+              <div class="bar-col active-bar" style="height: 45px;"></div>
+              <div class="bar-col" style="height: 38px;"></div>
+              <div class="bar-col active-bar" style="height: 50px;"></div>
+              <div class="bar-col" style="height: 42px;"></div>
+              <div class="bar-col active-bar" style="height: 48px;"></div>
+            </div>
+            <div class="chart-footer-row">
+              <span class="trend-positive">↑ 8.3%</span>
+              <span class="chart-sub">All sites</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partners / Social Proof Strip -->
+      <div class="partners-strip">
+        <span class="partners-caption">TRUSTED BY LEADING MANUFACTURERS</span>
+        <div class="partners-logos">
+          <img src="assets/partner-logo-1.svg" alt="Manufacturing Partner 1" class="partner-logo" width="131" height="27">
+          <img src="assets/partner-logo-2.svg" alt="Manufacturing Partner 2" class="partner-logo" width="131" height="29">
+          <img src="assets/partner-logo-3.svg" alt="Manufacturing Partner 3" class="partner-logo" width="128" height="27">
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems / Challenges Section -->
+    <section class="section problems-section" id="challenges">
+      <div class="section-glow-bg problems-glow" aria-hidden="true">
+        <img src="assets/bg-glow-problems.svg" alt="" class="glow-img">
+      </div>
+
+      <div class="section-header">
+        <div class="section-badge">THE CHALLENGES</div>
+        <h2 class="section-title">Traditional operations suffer<br>from hidden inefficiencies</h2>
+      </div>
+
+      <div class="problems-grid">
+        <!-- Problem Card 1 -->
+        <article class="problem-card">
+          <div class="problem-visual">
+            <div class="problem-chart-mockup">
+              <div class="p-bars-group">
+                <div class="p-bar" style="height: 65px; background: #F4C9A8;"></div>
+                <div class="p-bar" style="height: 98px; background: #E8845A;"></div>
+                <div class="p-bar" style="height: 54px; background: #F4C9A8;"></div>
+                <div class="p-bar" style="height: 120px; background: #E8845A;"></div>
+                <div class="p-bar" style="height: 76px; background: #F4C9A8;"></div>
+                <div class="p-bar" style="height: 43px; background: #FBDAC8;"></div>
+              </div>
+              <div class="problem-status-pill error-pill">
+                <span class="pill-dot red-dot"></span>
+                <span>3 errors found</span>
+              </div>
+            </div>
+          </div>
+          <div class="problem-content">
+            <h3 class="problem-heading">Manual tracking errors</h3>
+            <p class="problem-desc">Clerical mistakes on paper logs and spreadsheet entry lead to inaccurate site-performance metrics.</p>
+          </div>
+        </article>
+
+        <!-- Problem Card 2 -->
+        <article class="problem-card">
+          <div class="problem-visual">
+            <div class="problem-clock-mockup">
+              <div class="clock-circle">
+                <img src="assets/warning-rounded.svg" alt="" class="warning-icon" width="66" height="66">
+              </div>
+              <div class="problem-status-pill delay-pill">
+                <span>7 days delayed</span>
+              </div>
+            </div>
+          </div>
+          <div class="problem-content">
+            <h3 class="problem-heading">Delayed reports &amp; no visibility</h3>
+            <p class="problem-desc">Waiting days or weeks for end-of-week reports leaves management blind to operational delays.</p>
+          </div>
+        </article>
+
+        <!-- Problem Card 3 -->
+        <article class="problem-card">
+          <div class="problem-visual">
+            <div class="problem-silos-mockup">
+              <div class="silos-avatars-row">
+                <div class="silo-node active-node">
+                  <span class="silo-head"></span>
+                  <span class="silo-body"></span>
+                </div>
+                <div class="silo-node muted-node">
+                  <span class="silo-head"></span>
+                  <span class="silo-body"></span>
+                </div>
+                <div class="silo-node muted-node">
+                  <span class="silo-head"></span>
+                  <span class="silo-body"></span>
+                </div>
+              </div>
+              <div class="problem-status-pill disconnected-pill">
+                <span>Disconnected</span>
+              </div>
+            </div>
+          </div>
+          <div class="problem-content">
+            <h3 class="problem-heading">Disconnected workforce</h3>
+            <p class="problem-desc">Shift leads, operators, and executive leadership operate with misaligned expectations and data silos.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Capabilities / Platform Features Section -->
+    <section class="section features-section" id="product">
+      <div class="section-glow-bg features-glow" aria-hidden="true">
+        <img src="assets/bg-glow-features.svg" alt="" class="glow-img">
+      </div>
+
+      <div class="section-header">
+        <div class="section-badge">CAPABILITIES</div>
+        <h2 class="section-title">Everything you need to manage performance</h2>
+      </div>
+
+      <div class="features-dual-layout">
+        <!-- Feature Tab List -->
+        <div class="feature-tabs-list" role="tablist">
+          <button class="feature-tab-item active" role="tab" aria-selected="true" data-tab="dashboard">
+            <div class="feature-tab-icon-box icon-purple">
+              <img src="assets/bar-chart-2.svg" alt="" width="20" height="20">
+            </div>
+            <div class="feature-tab-text">
+              <h3 class="feature-tab-title">Real-Time KPI Dashboard</h3>
+              <p class="feature-tab-desc">Instant live achievement percentages, target versus actual comparison metrics, and overall quality &amp; safety scores for immediate evaluation.</p>
+            </div>
+          </button>
+
+          <button class="feature-tab-item" role="tab" aria-selected="false" data-tab="workflow">
+            <div class="feature-tab-icon-box icon-cyan">
+              <img src="assets/git-branch.svg" alt="" width="20" height="20">
+            </div>
+            <div class="feature-tab-text">
+              <h3 class="feature-tab-title">Shift &amp; Operations Workflow</h3>
+              <p class="feature-tab-desc">Simplify start-of-day and end-of-day operations entries, direct task assignments, and structured approval queues for managers.</p>
+            </div>
+          </button>
+
+          <button class="feature-tab-item" role="tab" aria-selected="false" data-tab="multisite">
+            <div class="feature-tab-icon-box icon-green">
+              <img src="assets/layers.svg" alt="" width="20" height="20">
+            </div>
+            <div class="feature-tab-text">
+              <h3 class="feature-tab-title">Multi-Site Configuration</h3>
+              <p class="feature-tab-desc">Connect factories, construction projects, employees, and shift metrics dynamically under a single administrative panel.</p>
+            </div>
+          </button>
+
+          <button class="feature-tab-item" role="tab" aria-selected="false" data-tab="reports">
+            <div class="feature-tab-icon-box icon-amber">
+              <img src="assets/file-text.svg" alt="" width="20" height="20">
+            </div>
+            <div class="feature-tab-text">
+              <h3 class="feature-tab-title">Automated Reports</h3>
+              <p class="feature-tab-desc">Generate consolidated performance logs, identify group productivity, and analyze delay factors with automated export to PDF or Excel formats.</p>
+            </div>
+          </button>
+        </div>
+
+        <!-- Dashboard Glass Preview Card -->
+        <div class="features-preview-wrap">
+          <div class="dashboard-outer-frame">
+            <div class="glass-dashboard-content">
+              <!-- Header -->
+              <div class="dash-top-bar">
+                <div>
+                  <h4 class="dash-heading">Executive Overview</h4>
+                  <span class="dash-subheading">UtilizeFlow Central Command Suite</span>
+                </div>
+                <div class="dash-live-badge">
+                  <span class="live-dot-pulse"></span>
+                  <span>LIVE</span>
+                </div>
+              </div>
+
+              <!-- 3 KPI Cards -->
+              <div class="dash-kpi-row">
+                <div class="dash-kpi-box">
+                  <span class="dash-kpi-label">Active Labor Cost</span>
+                  <span class="dash-kpi-stat">$142.8k</span>
+                </div>
+                <div class="dash-kpi-box">
+                  <span class="dash-kpi-label">Trend Velocity</span>
+                  <span class="dash-kpi-stat stat-coral">+14.2%</span>
+                </div>
+                <div class="dash-kpi-box">
+                  <span class="dash-kpi-label">Incidents</span>
+                  <span class="dash-kpi-stat stat-green">0</span>
+                </div>
+              </div>
+
+              <!-- Shift Delay Diagnostics Chart -->
+              <div class="dash-chart-card">
+                <div class="dash-chart-header">
+                  <span class="dash-chart-title">Shift Delay Diagnostics</span>
+                  <span class="dash-chart-timeframe">Last 7 Days</span>
+                </div>
+                <div class="dash-bars-grid">
+                  <div class="dash-bar-unit">
+                    <div class="d-bar" style="height: 54px;"></div>
+                    <span class="d-label">D1</span>
+                  </div>
+                  <div class="dash-bar-unit">
+                    <div class="d-bar" style="height: 96px;"></div>
+                    <span class="d-label">D2</span>
+                  </div>
+                  <div class="dash-bar-unit">
+                    <div class="d-bar" style="height: 66px;"></div>
+                    <span class="d-label">D3</span>
+                  </div>
+                  <div class="dash-bar-unit">
+                    <div class="d-bar d-bar-active" style="height: 114px;"></div>
+                    <span class="d-label">D4</span>
+                  </div>
+                  <div class="dash-bar-unit">
+                    <div class="d-bar" style="height: 72px;"></div>
+                    <span class="d-label">D5</span>
+                  </div>
+                  <div class="dash-bar-unit">
+                    <div class="d-bar" style="height: 48px;"></div>
+                    <span class="d-label">D6</span>
+                  </div>
+                  <div class="dash-bar-unit">
+                    <div class="d-bar" style="height: 90px;"></div>
+                    <span class="d-label">D7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Bento Grid Section -->
+    <section class="section solutions-section" id="solutions">
+      <div class="section-header">
+        <div class="section-badge">SOLUTION PATHWAYS</div>
+        <h2 class="section-title">Tailored Workflows for High-Stakes Operations</h2>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento Card 1 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">1</span>
+            <h3 class="bento-card-title">Shift Start &amp; End Entries</h3>
+          </div>
+          <p class="bento-card-desc">Capture real work at the source with verified shift check-in/out.</p>
+          <div class="bento-metric-box">
+            <span class="metric-caption">Shift Check-In</span>
+            <div class="metric-row-between">
+              <span class="metric-highlight-dark">Site A - Line 2</span>
+              <span class="icon-circle-teal">
+                <img src="assets/circle-check.svg" alt="" width="14" height="14">
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bento Card 2 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">2</span>
+            <h3 class="bento-card-title">Daily Production Logging</h3>
+          </div>
+          <p class="bento-card-desc">Log output, work, and resources across factory, site, and projects.</p>
+          <div class="bento-metric-box">
+            <div class="metric-row-between">
+              <span class="metric-caption">Steel Rebar Installation</span>
+              <span class="metric-val-teal">83.3%</span>
+            </div>
+            <div class="metric-progress-track">
+              <div class="metric-progress-fill" style="width: 83.3%;"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bento Card 3 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">3</span>
+            <h3 class="bento-card-title">KPI Scoring &amp; Achievement</h3>
+          </div>
+          <p class="bento-card-desc">Automatic KPI scoring for employees, teams, and contractors.</p>
+          <div class="bento-metric-box metric-flex-row">
+            <div>
+              <span class="metric-caption-xs">Average KPI</span>
+              <span class="metric-large-teal">77.8%</span>
+              <span class="metric-trend-xs">+17% vs last 7 days</span>
+            </div>
+            <div class="mini-teal-bars">
+              <div class="teal-bar" style="height: 10px;"></div>
+              <div class="teal-bar" style="height: 14px;"></div>
+              <div class="teal-bar" style="height: 18px;"></div>
+              <div class="teal-bar" style="height: 30px;"></div>
+              <div class="teal-bar" style="height: 40px;"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bento Card 4 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">4</span>
+            <h3 class="bento-card-title">Delay Factor Analysis</h3>
+          </div>
+          <p class="bento-card-desc">Identify why time is lost and where productivity declines.</p>
+          <div class="bento-metric-box">
+            <div class="metric-row-between mb-sm">
+              <span class="metric-caption">Material Delay</span>
+              <span class="pill-tag-red">38m</span>
+            </div>
+            <div class="metric-row-between">
+              <span class="metric-caption">Equipment Failure</span>
+              <span class="pill-tag-amber">22m</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bento Card 5 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">5</span>
+            <h3 class="bento-card-title">Safety &amp; Incident Tracking</h3>
+          </div>
+          <p class="bento-card-desc">Report safety violations, incidents, and worker history.</p>
+          <div class="bento-metric-box metric-row-between">
+            <div>
+              <span class="metric-caption-xs">Total Incidents</span>
+              <span class="metric-large-teal">0</span>
+            </div>
+            <div class="icon-circle-teal-lg">
+              <img src="assets/shield-check.svg" alt="" width="24" height="24">
+            </div>
+          </div>
+        </article>
+
+        <!-- Bento Card 6 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">6</span>
+            <h3 class="bento-card-title">Advanced Reporting</h3>
+          </div>
+          <p class="bento-card-desc">Deep reporting across individual, group, project, and site levels.</p>
+          <div class="bento-metric-box">
+            <span class="metric-caption">Live Reports Generated</span>
+            <div class="metric-row-between">
+              <span class="metric-highlight-dark">1,240</span>
+              <div class="trend-teal-wrap">
+                <img src="assets/trending-up.svg" alt="" width="12" height="12">
+                <span>+12.4%</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bento Card 7 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">7</span>
+            <h3 class="bento-card-title">Permissions &amp; Access Control</h3>
+          </div>
+          <p class="bento-card-desc">Role-based access with master data governance.</p>
+          <div class="bento-metric-box metric-row-between">
+            <span class="metric-caption">Role: Site Manager</span>
+            <span class="icon-circle-teal">
+              <img src="assets/lock.svg" alt="" width="12" height="12">
+            </span>
+          </div>
+        </article>
+
+        <!-- Bento Card 8 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">8</span>
+            <h3 class="bento-card-title">Mobile Shift Check-In</h3>
+          </div>
+          <p class="bento-card-desc">On-the-go check-in, updates, and real-time data capture.</p>
+          <div class="bento-metric-box metric-row-left">
+            <span class="icon-circle-teal">
+              <img src="assets/smartphone.svg" alt="" width="16" height="16">
+            </span>
+            <span class="metric-highlight-dark">GPS Verified Check-In</span>
+          </div>
+        </article>
+
+        <!-- Bento Card 9 -->
+        <article class="bento-card">
+          <div class="bento-card-top">
+            <span class="bento-num-badge">9</span>
+            <h3 class="bento-card-title">Workforce Scheduling</h3>
+          </div>
+          <p class="bento-card-desc">Manage crew schedules, shift assignments, and availability tracking.</p>
+          <div class="bento-metric-box metric-flex-row">
+            <div>
+              <span class="metric-highlight-dark">Crew Schedule</span>
+              <div class="schedule-sub-row">
+                <span class="metric-caption-xs">Site A • 06:00–14:00</span>
+                <img src="assets/calendar.svg" alt="" width="12" height="18">
+              </div>
+            </div>
+            <div class="availability-badge">
+              <span class="avail-ratio">4/5</span>
+              <div class="avail-bars">
+                <div class="a-bar" style="height: 12px;"></div>
+                <div class="a-bar" style="height: 20px;"></div>
+                <div class="a-bar" style="height: 16px;"></div>
+                <div class="a-bar" style="height: 24px;"></div>
+                <div class="a-bar" style="height: 32px;"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mobile Workforce Section -->
+    <section class="section mobile-section" id="mobile">
+      <div class="section-glow-bg mobile-glow" aria-hidden="true">
+        <img src="assets/bg-glow-mobile.svg" alt="" class="glow-img">
+      </div>
+
+      <div class="section-header">
+        <div class="section-badge">ON-SITE MOBILITY</div>
+        <h2 class="section-title">Empower your workforce on the go</h2>
+      </div>
+
+      <div class="mobile-dual-layout">
+        <!-- Dual Phone Mockup -->
+        <div class="mobile-mockup-wrap">
+          <!-- Phone 1 -->
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <div class="phone-status-bar">
+                <span class="phone-time">09:41</span>
+                <img src="assets/battery-full.svg" alt="" width="12" height="12">
+              </div>
+              <div class="phone-pill-notice offline-notice">
+                <span class="pulse-dot-red"></span>
+                <span>OFFLINE MODE ACTIVE</span>
+              </div>
+              <div class="phone-card-body">
+                <h4 class="phone-body-title">Daily Timesheet Log</h4>
+                <div class="phone-input-mock">
+                  <span class="phone-input-label">Shift Code</span>
+                  <span class="phone-input-val">A-District 4B</span>
+                </div>
+                <div class="phone-input-mock">
+                  <span class="phone-input-label">Task Assignment</span>
+                  <span class="phone-input-val">Foundation Inspection</span>
+                </div>
+              </div>
+              <button class="phone-btn-cta" type="button">START LOGGING SHIFT</button>
+            </div>
+          </div>
+
+          <!-- Phone 2 -->
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <div class="phone-status-bar">
+                <span class="phone-time">14:02</span>
+                <img src="assets/map-pin.svg" alt="" width="12" height="12">
+              </div>
+              <div class="phone-pill-notice verified-notice">
+                <span class="pulse-dot-green"></span>
+                <span>GPS LOC verified</span>
+              </div>
+              <div class="phone-card-body">
+                <h4 class="phone-body-title">Site Handover Proof</h4>
+                <div class="phone-image-frame">
+                  <img src="assets/mobile-map-preview.png" alt="Site GPS Handover Proof Map" class="phone-preview-img" width="220" height="130">
+                </div>
+                <div class="phone-status-line">
+                  <span class="phone-input-label">Supervisor Status</span>
+                  <span class="supervisor-status">Connected</span>
+                </div>
+              </div>
+              <button class="phone-btn-cta" type="button">SUBMIT HANDOVER</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Benefits List -->
+        <div class="mobile-benefits-list">
+          <div class="benefit-item">
+            <div class="benefit-icon-box icon-indigo">
+              <img src="assets/bar-chart-2.svg" alt="" width="20" height="20">
+            </div>
+            <div>
+              <h3 class="benefit-title">Daily task assignments</h3>
+              <p class="benefit-desc">Operators receive clear task targets and checklist assignments straight to their devices at the start of each shift.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon-box icon-cyan">
+              <img src="assets/git-branch.svg" alt="" width="20" height="20">
+            </div>
+            <div>
+              <h3 class="benefit-title">End-of-day entries in seconds</h3>
+              <p class="benefit-desc">Ditch paper logs entirely. Field personnel can report material counts, safety indicators, and shut-down metrics in seconds.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon-box icon-green">
+              <img src="assets/layers.svg" alt="" width="20" height="20">
+            </div>
+            <div>
+              <h3 class="benefit-title">Personal KPI overview</h3>
+              <p class="benefit-desc">Maintain transparency and pride of work by offering workers a real-time summary of their shift targets versus historical averages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section class="section showcase-section" id="showcase">
+      <div class="section-header text-center">
+        <div class="section-badge">DEMO WALKTHROUGH</div>
+        <h2 class="section-title">See it in action</h2>
+      </div>
+
+      <div class="showcase-viewer">
+        <div class="showcase-media-frame">
+          <img src="assets/dashboard-showcase.png" alt="FactorKPI Full Central Command Dashboard Interface" class="showcase-img" width="902" height="619">
+          <div class="showcase-play-overlay">
+            <button class="showcase-play-btn" aria-label="Play Product Demo Video">
+              <img src="assets/hero-play.svg" alt="Play Video" width="120" height="120">
+            </button>
+          </div>
+        </div>
+
+        <!-- Showcase Segment Tabs -->
+        <div class="showcase-pills-bar">
+          <button class="showcase-pill active" type="button">Dashboard</button>
+          <button class="showcase-pill" type="button">Shift Entry</button>
+          <button class="showcase-pill" type="button">Reports</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roles / Target Audiences Section -->
+    <section class="section roles-section" id="roles">
+      <div class="section-header">
+        <div class="section-badge">TARGET AUDIENCES</div>
+        <h2 class="section-title">Built for every role in industrial operations</h2>
+      </div>
+
+      <div class="roles-grid">
+        <!-- Role 1: Executives -->
+        <article class="role-card">
+          <div class="role-card-header">
+            <div class="role-icon-box role-orange-bg">
+              <img src="assets/icon-role-executives.svg" alt="" width="24" height="24">
+            </div>
+            <h3 class="role-card-title">For Executives</h3>
+          </div>
+          <ul class="role-features-list">
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-orange"></span>
+              <span>Organization-wide KPI visibility</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-orange"></span>
+              <span>Multi-site performance comparison</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-orange"></span>
+              <span>High-level trends and risks</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-orange"></span>
+              <span>Consolidated reporting</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-orange"></span>
+              <span>Strategic performance insights</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Role 2: Managers -->
+        <article class="role-card">
+          <div class="role-card-header">
+            <div class="role-icon-box role-cyan-bg">
+              <img src="assets/icon-role-managers.svg" alt="" width="24" height="24">
+            </div>
+            <h3 class="role-card-title">For Managers</h3>
+          </div>
+          <ul class="role-features-list">
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-cyan"></span>
+              <span>Assign tasks and targets</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-cyan"></span>
+              <span>Review employee submissions</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-cyan"></span>
+              <span>Monitor team KPIs</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-cyan"></span>
+              <span>Identify delays and issues</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-cyan"></span>
+              <span>Generate performance reports</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Role 3: Employees -->
+        <article class="role-card">
+          <div class="role-card-header">
+            <div class="role-icon-box role-indigo-bg">
+              <img src="assets/icon-role-employees.svg" alt="" width="24" height="24">
+            </div>
+            <h3 class="role-card-title">For Employees</h3>
+          </div>
+          <ul class="role-features-list">
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-indigo"></span>
+              <span>View daily assignments</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-indigo"></span>
+              <span>Submit work progress</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-indigo"></span>
+              <span>Upload evidence</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-indigo"></span>
+              <span>Monitor personal KPIs</span>
+            </li>
+            <li class="role-feature-item">
+              <span class="role-bullet bullet-indigo"></span>
+              <span>Review task and performance history</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA & Interactive Booking Section -->
+    <section class="cta-section" id="demo">
+      <div class="cta-container">
+        <!-- CTA Left Content -->
+        <div class="cta-copy">
+          <h2 class="cta-heading">Ready to transform your operations?</h2>
+          <p class="cta-desc">Start standardizing data across shift operators, site managers, and executives. Receive your custom implementation roadmap today.</p>
+          <div class="cta-buttons-row">
+            <a href="#bookingCard" class="btn btn-primary btn-cta-book">Book a Demo</a>
+            <a href="mailto:sales@factorkpi.com" class="btn btn-outline-white">Talk to an Expert</a>
+          </div>
+        </div>
+
+        <!-- CTA Right Booking Card -->
+        <div class="booking-card" id="bookingCard">
+          <h3 class="booking-title">Schedule your demo</h3>
+
+          <!-- Weekday Picker -->
+          <div class="weekday-picker" role="radiogroup" aria-label="Select Demo Day">
+            <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="M12">
+              <span class="day-letter">M</span>
+              <span class="date-number">12</span>
+            </button>
+            <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="T13">
+              <span class="day-letter">T</span>
+              <span class="date-number">13</span>
+            </button>
+            <button type="button" class="weekday-col active" role="radio" aria-checked="true" data-day="W14">
+              <span class="day-letter">W</span>
+              <span class="date-number">14</span>
+            </button>
+            <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="T15">
+              <span class="day-letter">T</span>
+              <span class="date-number">15</span>
+            </button>
+            <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="F16">
+              <span class="day-letter">F</span>
+              <span class="date-number">16</span>
+            </button>
+            <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="S17">
+              <span class="day-letter">S</span>
+              <span class="date-number">17</span>
+            </button>
+            <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="S18">
+              <span class="day-letter">S</span>
+              <span class="date-number">18</span>
+            </button>
+          </div>
+
+          <!-- Booking Form -->
+          <form class="booking-form" id="bookingForm" onsubmit="event.preventDefault(); alert('Demo requested successfully! Our team will contact you shortly.');">
+            <div class="form-group">
+              <label for="bookingName" class="sr-only">Name</label>
+              <input type="text" id="bookingName" class="booking-input" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <label for="bookingEmail" class="sr-only">Work Email</label>
+              <input type="email" id="bookingEmail" class="booking-input" placeholder="Work Email" required>
+            </div>
+            <div class="form-group">
+              <label for="bookingCompany" class="sr-only">Company</label>
+              <input type="text" id="bookingCompany" class="booking-input" placeholder="Company" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-confirm-booking">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="footer">
+    <div class="footer-glow-bg" aria-hidden="true">
+      <img src="assets/bg-glow-footer.svg" alt="" class="glow-img">
+    </div>
+
+    <div class="footer-container">
+      <div class="footer-cols">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#" class="footer-logo-link" aria-label="FactorKPI Home">
+            <img src="assets/factorkpi-footer-logo.png" alt="FactorKPI" class="footer-logo" width="164" height="55">
+          </a>
+          <p class="footer-about">
+            FactorKPI is the category-defining workforce performance intelligence platform designed for high-stakes operational environments.
+          </p>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="footer-nav-groups">
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="#product">Integrations</a></li>
+              <li><a href="#mobile">Mobile App</a></li>
+              <li><a href="#security">Security</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Solutions</h4>
+            <ul class="footer-links">
+              <li><a href="#solutions">Construction</a></li>
+              <li><a href="#solutions">Manufacturing</a></li>
+              <li><a href="#solutions">Field Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#contact">Contact Sales</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Newsletter & Socials -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Join the Performance Newsletter</h4>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to the newsletter!');">
+            <label for="newsletterEmail" class="sr-only">Email address</label>
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="you@company.com" required>
+            <button type="submit" class="btn btn-primary btn-newsletter-submit">Go</button>
+          </form>
+
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-linkedin.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-twitter.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-facebook.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-youtube.svg" alt="" width="18" height="18">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 FactorKPI Technologies Inc. All rights reserved. Metrics clearly labeled as sample data.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+        navToggle.setAttribute('aria-expanded', !expanded);
+        navMenu.classList.toggle('open');
+      });
+    }
+
+    // Nav links active state on click & section scroll
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(l => {
+          l.classList.remove('active');
+          l.removeAttribute('aria-current');
+        });
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+        if (navMenu && navMenu.classList.contains('open')) {
+          navMenu.classList.remove('open');
+          if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // Scrollspy to automatically update active link when scrolling sections
+    const observedSections = document.querySelectorAll('section[id]');
+    if ('IntersectionObserver' in window && observedSections.length > 0) {
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const currentId = entry.target.getAttribute('id');
+            const matchingLink = document.querySelector(`.nav-link[href="#${currentId}"]`);
+            if (matchingLink) {
+              navLinks.forEach(l => {
+                l.classList.remove('active');
+                l.removeAttribute('aria-current');
+              });
+              matchingLink.classList.add('active');
+              matchingLink.setAttribute('aria-current', 'page');
+            }
+          }
+        });
+      }, { threshold: 0.35 });
+      observedSections.forEach(sec => sectionObserver.observe(sec));
+    }
+
+    // Weekday picker interaction in Demo Booking card
+    const weekdayButtons = document.querySelectorAll('.weekday-col');
+    weekdayButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        weekdayButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-checked', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-checked', 'true');
+      });
+    });
+
+    // Features tab selection interaction
+    const featureTabs = document.querySelectorAll('.feature-tab-item');
+    featureTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        featureTabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+      });
+    });
+
+    // Showcase pills selection
+    const showcasePills = document.querySelectorAll('.showcase-pill');
+    showcasePills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        showcasePills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
