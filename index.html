@@ -15,17 +15,18 @@
   <!-- Navigation -->
   <header class="header">
     <nav class="nav-container">
-      <a href="#" class="nav-brand" aria-label="FactorKPI Home">
+      <a href="./index.html" class="nav-brand" aria-label="FactorKPI Home">
         <img src="assets/factorkpi-logo.png" alt="FactorKPI Logo" class="brand-logo" width="164" height="55">
       </a>
 
       <div class="nav-menu" id="navMenu">
         <ul class="nav-links">
-          <li><a href="#product" class="nav-link active" aria-current="page">Product</a></li>
-          <li><a href="#solutions" class="nav-link">Solutions</a></li>
-          <li><a href="#pricing" class="nav-link">Pricing</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="./product.html" class="nav-link">Product</a></li>
+          <li><a href="./solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="./pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="./blog.html" class="nav-link">Blog</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
         </ul>
         <div class="nav-actions-mobile">
           <a href="#demo" class="btn btn-primary btn-book-demo">Book a Demo</a>
@@ -43,7 +44,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-container">
@@ -832,9 +833,10 @@
         </article>
       </div>
     </section>
+  </main>
 
-    <!-- CTA & Interactive Booking Section -->
-    <section class="cta-section" id="demo">
+  <!-- CTA & Interactive Booking Section -->
+  <section class="cta-section" id="demo">
       <div class="cta-container">
         <!-- CTA Left Content -->
         <div class="cta-copy">
@@ -901,55 +903,54 @@
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- Site Footer -->
-  <footer class="footer">
-    <div class="footer-glow-bg" aria-hidden="true">
-      <img src="assets/bg-glow-footer.svg" alt="" class="glow-img">
-    </div>
+    <!-- Site Footer -->
+    <footer class="footer">
+      <div class="footer-glow-bg" aria-hidden="true">
+        <img src="assets/bg-glow-footer.svg" alt="" class="glow-img">
+      </div>
 
-    <div class="footer-container">
-      <div class="footer-cols">
-        <!-- Brand Info -->
-        <div class="footer-brand-col">
-          <a href="#" class="footer-logo-link" aria-label="FactorKPI Home">
-            <img src="assets/factorkpi-footer-logo.png" alt="FactorKPI" class="footer-logo" width="164" height="55">
-          </a>
-          <p class="footer-about">
-            FactorKPI is the category-defining workforce performance intelligence platform designed for high-stakes operational environments.
-          </p>
-        </div>
-
-        <!-- Links Columns -->
-        <div class="footer-nav-groups">
-          <div class="footer-links-col">
-            <h4 class="footer-col-title">Product</h4>
-            <ul class="footer-links">
-              <li><a href="#product">Integrations</a></li>
-              <li><a href="#mobile">Mobile App</a></li>
-              <li><a href="#security">Security</a></li>
-            </ul>
+      <div class="footer-container">
+        <div class="footer-cols">
+          <!-- Brand Info -->
+          <div class="footer-brand-col">
+            <a href="./index.html" class="footer-logo-link" aria-label="FactorKPI Home">
+              <img src="assets/factorkpi-footer-logo.png" alt="FactorKPI" class="footer-logo" width="164" height="55">
+            </a>
+            <p class="footer-about">
+              FactorKPI is the category-defining workforce performance intelligence platform designed for high-stakes operational environments.
+            </p>
           </div>
 
-          <div class="footer-links-col">
-            <h4 class="footer-col-title">Solutions</h4>
-            <ul class="footer-links">
-              <li><a href="#solutions">Construction</a></li>
-              <li><a href="#solutions">Manufacturing</a></li>
-              <li><a href="#solutions">Field Service</a></li>
-            </ul>
-          </div>
+          <!-- Links Columns -->
+          <div class="footer-nav-groups">
+            <div class="footer-links-col">
+              <h4 class="footer-col-title">Product</h4>
+              <ul class="footer-links">
+                <li><a href="./product.html">Overview</a></li>
+                <li><a href="./pricing.html">Pricing</a></li>
+                <li><a href="./product.html#integrations">Integrations</a></li>
+              </ul>
+            </div>
 
-          <div class="footer-links-col">
-            <h4 class="footer-col-title">Company</h4>
-            <ul class="footer-links">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#careers">Careers</a></li>
-              <li><a href="#contact">Contact Sales</a></li>
-            </ul>
+            <div class="footer-links-col">
+              <h4 class="footer-col-title">Solutions</h4>
+              <ul class="footer-links">
+                <li><a href="./solutions.html">Manufacturing</a></li>
+                <li><a href="./solutions.html">Construction</a></li>
+                <li><a href="./solutions.html">Field Service</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-col">
+              <h4 class="footer-col-title">Company</h4>
+              <ul class="footer-links">
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./about.html#contact">Contact Sales</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
 
         <!-- Newsletter & Socials -->
         <div class="footer-newsletter-col">
@@ -1002,44 +1003,6 @@
       });
     }
 
-    // Nav links active state on click & section scroll
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.forEach(l => {
-          l.classList.remove('active');
-          l.removeAttribute('aria-current');
-        });
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-        if (navMenu && navMenu.classList.contains('open')) {
-          navMenu.classList.remove('open');
-          if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
-        }
-      });
-    });
-
-    // Scrollspy to automatically update active link when scrolling sections
-    const observedSections = document.querySelectorAll('section[id]');
-    if ('IntersectionObserver' in window && observedSections.length > 0) {
-      const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const currentId = entry.target.getAttribute('id');
-            const matchingLink = document.querySelector(`.nav-link[href="#${currentId}"]`);
-            if (matchingLink) {
-              navLinks.forEach(l => {
-                l.classList.remove('active');
-                l.removeAttribute('aria-current');
-              });
-              matchingLink.classList.add('active');
-              matchingLink.setAttribute('aria-current', 'page');
-            }
-          }
-        });
-      }, { threshold: 0.35 });
-      observedSections.forEach(sec => sectionObserver.observe(sec));
-    }
 
     // Weekday picker interaction in Demo Booking card
     const weekdayButtons = document.querySelectorAll('.weekday-col');
