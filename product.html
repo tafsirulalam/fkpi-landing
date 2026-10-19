@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product | FactorKPI - Real-Time Shop Floor Intelligence</title>
+  <meta name="description" content="Explore FactorKPI's smart performance management capabilities, shift tracking, and real-time shop floor intelligence for modern manufacturing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="./index.html" class="nav-brand" aria-label="FactorKPI Home">
+        <img src="assets/factorkpi-logo.png" alt="FactorKPI Logo" class="brand-logo" width="164" height="55">
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./product.html" class="nav-link active" aria-current="page">Product</a></li>
+          <li><a href="./solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="./pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="./blog.html" class="nav-link">Blog</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+        <div class="nav-actions-mobile">
+          <a href="#demo" class="btn btn-primary btn-book-demo">Book a Demo</a>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#demo" class="btn btn-primary btn-book-demo">Book a Demo</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+  <!-- =========================================================================
+       PRODUCT PAGE INNER SECTIONS
+       ========================================================================= -->
+
+  <!-- 1. Product Hero Section -->
+  <section class="section product-hero-section">
+    <div class="product-hero-container">
+      <!-- Left Content -->
+      <div class="product-hero-copy">
+        <div class="section-badge">The FactorKPI Platform</div>
+        <h1 class="product-hero-title">One platform to measure, manage, and improve performance</h1>
+        <p class="product-hero-desc">
+          Connect KPIs, daily operations, employee tasks, production data, and reporting in one place. FactorKPI gives your team real-time visibility into what is happening, what needs attention, and where performance can improve.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#demo" class="btn btn-primary">
+            <span>Book a Demo</span>
+            <img src="assets/icon-arrow-right.svg" alt="" width="16" height="16">
+          </a>
+          <a href="#demo-video" class="btn btn-secondary">
+            <img src="assets/icon-play-circle.svg" alt="" width="16" height="16">
+            <span>See How It Works</span>
+          </a>
+        </div>
+
+        <div class="hero-trust-badge">
+          <img src="assets/icon-shield-check.svg" alt="" width="20" height="20">
+          <span>Built for manufacturing, factories, shift-based teams, and multi-site operations.</span>
+        </div>
+      </div>
+
+      <!-- Right Dashboard Mockup -->
+      <div class="product-hero-visual">
+        <div class="hero-glow-circle" aria-hidden="true"></div>
+
+        <div class="prod-dash-card">
+          <!-- Card Header -->
+          <div class="prod-dash-header">
+            <div>
+              <h3 class="prod-dash-title">FactorKPI Command Center</h3>
+              <span class="prod-dash-subtitle">Site #04 - Eastern Assembly</span>
+            </div>
+            <div class="prod-live-badge">
+              <span class="live-dot-green"></span>
+              <span>LIVE</span>
+            </div>
+          </div>
+
+          <!-- Quick Stats Row -->
+          <div class="prod-dash-stats-row">
+            <div class="prod-dash-stat-box">
+              <span class="stat-box-label">Total Production</span>
+              <span class="stat-box-val">48,290 units</span>
+            </div>
+            <div class="prod-dash-stat-box">
+              <span class="stat-box-label">Shift Achievement</span>
+              <span class="stat-box-val val-orange">94.2%</span>
+            </div>
+          </div>
+
+          <!-- Mini Bar Chart -->
+          <div class="prod-chart-area">
+            <div class="prod-chart-header">
+              <span class="prod-chart-title">Hourly Production vs Target</span>
+              <span class="prod-chart-sub">Current Shift</span>
+            </div>
+            <div class="prod-bar-chart-row">
+              <div class="prod-chart-bar" style="height: 30px;"></div>
+              <div class="prod-chart-bar" style="height: 45px;"></div>
+              <div class="prod-chart-bar" style="height: 60px;"></div>
+              <div class="prod-chart-bar" style="height: 55px;"></div>
+              <div class="prod-chart-bar" style="height: 80px;"></div>
+              <div class="prod-chart-bar bar-active-orange" style="height: 95px;"></div>
+              <div class="prod-chart-bar" style="height: 75px;"></div>
+              <div class="prod-chart-bar" style="height: 90px;"></div>
+              <div class="prod-chart-bar" style="height: 85px;"></div>
+            </div>
+          </div>
+
+          <!-- Shift Manager Footer -->
+          <div class="prod-dash-footer">
+            <div class="manager-info">
+              <span class="manager-label">Shift Manager:</span>
+              <strong class="manager-name">Marcus Vance (Shift B)</strong>
+            </div>
+            <span class="stat-trend-green">+12.4% vs Shift A</span>
+          </div>
+        </div>
+
+        <!-- Floating Card 1: Active Tasks -->
+        <div class="prod-float-card float-tasks-card">
+          <div class="float-card-header">
+            <span class="float-card-title">Active Tasks</span>
+            <span class="float-card-badge">5 / 6</span>
+          </div>
+          <ul class="float-task-list">
+            <li class="float-task-item">
+              <img src="assets/icon-activity.svg" alt="" width="12" height="12">
+              <span>Pre-shift safety check</span>
+            </li>
+            <li class="float-task-item">
+              <img src="assets/icon-activity.svg" alt="" width="12" height="12">
+              <span>Calibration on line 3</span>
+            </li>
+            <li class="float-task-item">
+              <img src="assets/icon-activity.svg" alt="" width="12" height="12">
+              <span>QA Sample collection</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Floating Card 2: Overall OEE -->
+        <div class="prod-float-card float-oee-card">
+          <span class="oee-card-eyebrow">Overall OEE</span>
+          <span class="oee-card-stat">88.4%</span>
+          <span class="oee-card-target">Target: 85.0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. How It Works Section -->
+  <section class="section product-how-section">
+    <div class="section-header">
+      <div class="section-badge">One Connected Workflow</div>
+      <h2 class="section-title">From daily work to measurable performance</h2>
+      <p class="section-desc">FactorKPI connects everyday operations with the KPIs that matter, giving teams a continuous performance management cycle.</p>
+    </div>
+
+    <div class="how-steps-row">
+      <!-- Step 01 -->
+      <div class="how-step-pill">
+        <div class="step-pill-top">
+          <span class="step-number-bubble">01</span>
+          <div class="step-icon-bubble">
+            <img src="assets/icon-clipboard-list.svg" alt="" width="24" height="24">
+          </div>
+        </div>
+        <div class="step-pill-body">
+          <h3 class="step-title">Assign</h3>
+          <p class="step-desc">Managers assign tasks, targets, responsibilities, and operational activities.</p>
+        </div>
+      </div>
+
+      <!-- Step 02 -->
+      <div class="how-step-pill">
+        <div class="step-pill-top">
+          <span class="step-number-bubble">02</span>
+          <div class="step-icon-bubble">
+            <img src="assets/icon-smartphone.svg" alt="" width="24" height="24">
+          </div>
+        </div>
+        <div class="step-pill-body">
+          <h3 class="step-title">Capture</h3>
+          <p class="step-desc">Employees submit progress, production data, photos, evidence, and work updates.</p>
+        </div>
+      </div>
+
+      <!-- Step 03 -->
+      <div class="how-step-pill">
+        <div class="step-pill-top">
+          <span class="step-number-bubble">03</span>
+          <div class="step-icon-bubble active-icon">
+            <img src="assets/icon-user-check.svg" alt="" width="24" height="24">
+          </div>
+        </div>
+        <div class="step-pill-body">
+          <h3 class="step-title">Review</h3>
+          <p class="step-desc">Managers validate work, approve submissions, and identify operational issues.</p>
+        </div>
+      </div>
+
+      <!-- Step 04 -->
+      <div class="how-step-pill">
+        <div class="step-pill-top">
+          <span class="step-number-bubble">04</span>
+          <div class="step-icon-bubble">
+            <img src="assets/icon-bar-chart.svg" alt="" width="24" height="24">
+          </div>
+        </div>
+        <div class="step-pill-body">
+          <h3 class="step-title">Measure</h3>
+          <p class="step-desc">FactorKPI automatically updates KPI scores, achievements, dashboards, and reports.</p>
+        </div>
+      </div>
+
+      <!-- Step 05 -->
+      <div class="how-step-pill">
+        <div class="step-pill-top">
+          <span class="step-number-bubble">05</span>
+          <div class="step-icon-bubble">
+            <img src="assets/icon-trending-up-orange.svg" alt="" width="24" height="24">
+          </div>
+        </div>
+        <div class="step-pill-body">
+          <h3 class="step-title">Improve</h3>
+          <p class="step-desc">Use performance insights to improve productivity, accountability, and operational efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Capabilities Bento Section -->
+  <section class="section product-capabilities-section">
+    <div class="section-header">
+      <div class="section-badge">Everything in One Platform</div>
+      <h2 class="section-title">Everything your team needs to manage performance</h2>
+      <p class="section-desc">Replace disconnected spreadsheets, manual reporting, and fragmented workflows with one connected operational performance system.</p>
+    </div>
+
+    <div class="capabilities-bento-grid">
+      <!-- Card 1 -->
+      <div class="cap-bento-card">
+        <div class="cap-icon-box purple-bg">
+          <img src="assets/icon-file-text.svg" alt="" width="20" height="20">
+        </div>
+        <h3 class="cap-card-title">Stop building reports manually</h3>
+        <p class="cap-card-desc">Generate structured KPI and operational reports automatically using real-time data.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="cap-bento-card">
+        <div class="cap-icon-box orange-bg">
+          <img src="assets/icon-crosshair.svg" alt="" width="20" height="20">
+        </div>
+        <h3 class="cap-card-title">Turn goals into measurable KPIs</h3>
+        <p class="cap-card-desc">Create KPIs, define targets, assign ownership, set scoring rules, and monitor achievement from one system.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="cap-bento-card">
+        <div class="cap-icon-box indigo-bg">
+          <img src="assets/icon-clipboard-purple.svg" alt="" width="20" height="20">
+        </div>
+        <h3 class="cap-card-title">Connect daily work with performance</h3>
+        <p class="cap-card-desc">Assign tasks, capture progress, review submissions, approve work, and connect activities directly to employee performance.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="cap-bento-card">
+        <div class="cap-icon-box green-bg">
+          <img src="assets/icon-box.svg" alt="" width="20" height="20">
+        </div>
+        <h3 class="cap-card-title">Track shifts &amp; production targets</h3>
+        <p class="cap-card-desc">Capture daily production, output, rejects, delays, downtime, and operational performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. KPI Deep Dive Section -->
+  <section class="section product-deepdive-section">
+    <div class="deepdive-grid">
+      <!-- Left Mockup Card -->
+      <div class="deepdive-mockup-frame">
+        <div class="kpi-detail-panel">
+          <div class="kpi-panel-header">
+            <h4 class="kpi-panel-name">Defect Rate Tolerance</h4>
+            <span class="kpi-panel-weight">KPI Weight: 35%</span>
+          </div>
+
+          <div class="kpi-panel-thresholds">
+            <div class="threshold-col">
+              <span class="threshold-label">Target Threshold</span>
+              <span class="threshold-val">&lt; 1.5%</span>
+            </div>
+            <div class="threshold-col">
+              <span class="threshold-label">Current Actual</span>
+              <span class="threshold-val val-green">0.84%</span>
+            </div>
+          </div>
+
+          <div class="kpi-panel-progress">
+            <div class="progress-status-row">
+              <span class="status-label">Status: On Track</span>
+              <span class="status-score">Achievement: 100%</span>
+            </div>
+            <div class="progress-track-bar">
+              <div class="progress-fill-green" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="kpi-panel-history">
+            <span class="history-label">Last 7 Shifts Trend</span>
+            <div class="shifts-spark-row">
+              <div class="shift-spark-col">
+                <div class="spark-bar" style="height: 32px; background: #E8845A;"></div>
+                <span class="spark-name">S1</span>
+              </div>
+              <div class="shift-spark-col">
+                <div class="spark-bar" style="height: 25px; background: #10B981;"></div>
+                <span class="spark-name">S2</span>
+              </div>
+              <div class="shift-spark-col">
+                <div class="spark-bar" style="height: 29px; background: #E8845A;"></div>
+                <span class="spark-name">S3</span>
+              </div>
+              <div class="shift-spark-col">
+                <div class="spark-bar" style="height: 20px; background: #10B981;"></div>
+                <span class="spark-name">S4</span>
+              </div>
+              <div class="shift-spark-col">
+                <div class="spark-bar" style="height: 16px; background: #10B981;"></div>
+                <span class="spark-name">S5</span>
+              </div>
+              <div class="shift-spark-col">
+                <div class="spark-bar" style="height: 12px; background: #10B981;"></div>
+                <span class="spark-name">S6</span>
+              </div>
+              <div class="shift-spark-col">
+                <div class="spark-bar" style="height: 15px; background: #10B981;"></div>
+                <span class="spark-name">S7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="deepdive-copy">
+        <div class="section-badge">KPI Management</div>
+        <h2 class="section-title">Turn business goals into measurable performance</h2>
+        <p class="section-desc">
+          Create structured KPIs for companies, departments, teams, or individual employees. Define exactly how performance is calculated and see progress automatically as operational data is submitted.
+        </p>
+
+        <div class="deepdive-checklist">
+          <div class="checklist-item">
+            <div class="check-icon-circle">
+              <img src="assets/icon-check-circle.svg" alt="" width="12" height="12">
+            </div>
+            <div>
+              <h4 class="check-title">Flexible KPI Setup</h4>
+              <p class="check-desc">Create custom KPIs, targets, weights, frequencies, and scoring rules.</p>
+            </div>
+          </div>
+
+          <div class="checklist-item">
+            <div class="check-icon-circle">
+              <img src="assets/icon-check-circle.svg" alt="" width="12" height="12">
+            </div>
+            <div>
+              <h4 class="check-title">Automated Scoring</h4>
+              <p class="check-desc">Automatically calculate performance based on submitted and approved data.</p>
+            </div>
+          </div>
+
+          <div class="checklist-item">
+            <div class="check-icon-circle">
+              <img src="assets/icon-check-circle.svg" alt="" width="12" height="12">
+            </div>
+            <div>
+              <h4 class="check-title">Clear Ownership</h4>
+              <p class="check-desc">Assign every KPI to the responsible person, team, department, or location.</p>
+            </div>
+          </div>
+
+          <div class="checklist-item">
+            <div class="check-icon-circle">
+              <img src="assets/icon-check-circle.svg" alt="" width="12" height="12">
+            </div>
+            <div>
+              <h4 class="check-title">Performance History</h4>
+              <p class="check-desc">Compare current results with historical trends and previous periods.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Operations Workflow Section -->
+  <section class="section product-workflow-section">
+    <div class="section-header">
+      <div class="section-badge badge-orange-outline">Operations Workflow</div>
+      <h2 class="section-title">Make daily operations part of your performance system</h2>
+      <p class="section-desc">FactorKPI connects tasks, shifts, production activities, inspections, incidents, and operational updates with measurable performance outcomes.</p>
+    </div>
+
+    <!-- 4 Numbered Workflow Cards Grid -->
+    <div class="workflow-cards-grid">
+      <div class="workflow-card">
+        <div class="wf-card-top">
+          <span class="wf-num-badge">1</span>
+          <h3 class="wf-card-title">Task Assignments</h3>
+        </div>
+        <p class="wf-card-desc">Assign daily, recurring, or one-time work to individuals and teams.</p>
+      </div>
+
+      <div class="workflow-card">
+        <div class="wf-card-top">
+          <span class="wf-num-badge">2</span>
+          <h3 class="wf-card-title">Work Progress</h3>
+        </div>
+        <p class="wf-card-desc">Employees submit status updates, notes, photos, documents, or production data.</p>
+      </div>
+
+      <div class="workflow-card">
+        <div class="wf-card-top">
+          <span class="wf-num-badge">3</span>
+          <h3 class="wf-card-title">Manager Review</h3>
+        </div>
+        <p class="wf-card-desc">Review submissions, provide feedback, approve work, or request corrections.</p>
+      </div>
+
+      <div class="workflow-card">
+        <div class="wf-card-top">
+          <span class="wf-num-badge">4</span>
+          <h3 class="wf-card-title">Operational History</h3>
+        </div>
+        <p class="wf-card-desc">Maintain a searchable record of completed work, updates, approvals, and performance.</p>
+      </div>
+    </div>
+
+    <!-- Horizontal Workflow Visual Timeline -->
+    <div class="workflow-timeline-wrapper">
+      <h4 class="timeline-title">Live Operations Flow</h4>
+
+      <div class="timeline-steps-flow">
+        <!-- Flow Step 1 -->
+        <div class="flow-step-item">
+          <div class="flow-indicator">
+            <span class="indicator-dot active-dot"></span>
+            <div class="indicator-line"></div>
+          </div>
+          <div class="flow-step-card">
+            <h5 class="flow-step-name">Task Assigned</h5>
+            <p class="flow-step-sub">Quality checklist for Batch #409</p>
+          </div>
+        </div>
+
+        <!-- Flow Step 2 -->
+        <div class="flow-step-item">
+          <div class="flow-indicator">
+            <span class="indicator-dot active-dot"></span>
+            <div class="indicator-line"></div>
+          </div>
+          <div class="flow-step-card">
+            <h5 class="flow-step-name">Employee Update</h5>
+            <p class="flow-step-sub">All standard gauges checked &amp; verified</p>
+          </div>
+        </div>
+
+        <!-- Flow Step 3 -->
+        <div class="flow-step-item">
+          <div class="flow-indicator">
+            <span class="indicator-dot active-dot"></span>
+            <div class="indicator-line"></div>
+          </div>
+          <div class="flow-step-card">
+            <h5 class="flow-step-name">Evidence Uploaded</h5>
+            <p class="flow-step-sub">Calibration_Report.pdf</p>
+          </div>
+        </div>
+
+        <!-- Flow Step 4 -->
+        <div class="flow-step-item">
+          <div class="flow-indicator">
+            <span class="indicator-dot orange-dot"></span>
+          </div>
+          <div class="flow-step-card">
+            <div class="flow-card-head">
+              <h5 class="flow-step-name">Manager Review</h5>
+              <span class="status-tag-pending">Pending</span>
+            </div>
+            <p class="flow-step-sub">Approved by Shift Lead Marcus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Real-Time Reporting Section -->
+  <section class="section product-reporting-section">
+    <div class="section-header">
+      <div class="section-badge">Real-Time Visibility</div>
+      <h2 class="section-title">Know exactly where performance stands</h2>
+      <p class="section-desc">Turn operational activity into clear dashboards and reports for faster, more informed decisions.</p>
+    </div>
+
+    <!-- Big Dashboard Frame -->
+    <div class="reporting-big-dashboard">
+      <!-- Top Bar -->
+      <div class="dash-top-bar">
+        <div class="portal-identity">
+          <span class="portal-dot-orange"></span>
+          <span class="portal-name">FactorKPI Enterprise Portal</span>
+        </div>
+        <div class="portal-filters">
+          <span class="period-text">Selected Period: Last 30 Days</span>
+          <span class="site-tag">All Sites (8)</span>
+        </div>
+      </div>
+
+      <!-- Top KPI Metrics 3-Cards Row -->
+      <div class="reporting-kpi-row">
+        <div class="rep-kpi-card">
+          <span class="rep-kpi-label">Target vs Actual Yield</span>
+          <span class="rep-kpi-val">94.8%</span>
+          <span class="rep-kpi-trend trend-green">↑ 1.2% this week</span>
+        </div>
+
+        <div class="rep-kpi-card">
+          <span class="rep-kpi-label">Delayed Tasks</span>
+          <span class="rep-kpi-val val-orange">3 Pending</span>
+          <span class="rep-kpi-trend trend-subtle">Average delay: 14 mins</span>
+        </div>
+
+        <div class="rep-kpi-card">
+          <span class="rep-kpi-label">Safety Incidents</span>
+          <span class="rep-kpi-val trend-green">0 reported</span>
+          <span class="rep-kpi-trend trend-green">120 days accident-free</span>
+        </div>
+      </div>
+
+      <!-- Site OEE Rankings Table -->
+      <div class="oee-rankings-box">
+        <div class="rankings-header">
+          <h4 class="rankings-title">Site OEE Rankings</h4>
+          <span class="rankings-sub">Compare all facilities</span>
+        </div>
+
+        <div class="rankings-list">
+          <!-- Row 1 -->
+          <div class="ranking-row">
+            <span class="rank-facility">Detroit Assembly #1</span>
+            <div class="rank-bar-wrap">
+              <div class="rank-bar-fill fill-green" style="width: 89.2%;"></div>
+            </div>
+            <span class="rank-percent">89.2%</span>
+            <span class="rank-badge badge-excellent">Excellent</span>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="ranking-row">
+            <span class="rank-facility">Munich Powertrain</span>
+            <div class="rank-bar-wrap">
+              <div class="rank-bar-fill fill-orange" style="width: 84.5%;"></div>
+            </div>
+            <span class="rank-percent">84.5%</span>
+            <span class="rank-badge badge-target-met">Target Met</span>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="ranking-row">
+            <span class="rank-facility">Shanghai Robotics</span>
+            <div class="rank-bar-wrap">
+              <div class="rank-bar-fill fill-amber" style="width: 78.1%;"></div>
+            </div>
+            <span class="rank-percent">78.1%</span>
+            <span class="rank-badge badge-review">Needs Review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Dash Capability Cards -->
+    <div class="dash-capabilities-row">
+      <div class="dash-cap-card cap-orange-tint">
+        <h4 class="dash-cap-title">Executive Overview</h4>
+        <div class="cap-dash-bar bar-orange"></div>
+        <p class="dash-cap-desc">See company-wide performance at a glance with roll-up metrics.</p>
+      </div>
+
+      <div class="dash-cap-card cap-yellow-tint">
+        <h4 class="dash-cap-title">Operational Analytics</h4>
+        <div class="cap-dash-bar bar-yellow"></div>
+        <p class="dash-cap-desc">Identify bottlenecks, delays, and underperformance in real-time.</p>
+      </div>
+
+      <div class="dash-cap-card cap-green-tint">
+        <h4 class="dash-cap-title">Automated Reports</h4>
+        <div class="cap-dash-bar bar-green"></div>
+        <p class="dash-cap-desc">Generate daily, weekly, and monthly summaries instantly to PDF.</p>
+      </div>
+
+      <div class="dash-cap-card cap-blue-tint">
+        <h4 class="dash-cap-title">Drill-Down Insights</h4>
+        <div class="cap-dash-bar bar-blue"></div>
+        <p class="dash-cap-desc">Move from company-level KPIs down to sites, lines, and shifts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Mobile Workforce Section -->
+  <section class="section product-mobile-section">
+    <div class="mobile-section-grid">
+      <!-- Left: 3 Mobile Phone Mockups -->
+      <div class="mobile-phones-track">
+        <!-- Phone 1: Today's Tasks -->
+        <div class="phone-screen-card">
+          <div class="phone-status-bar">
+            <span>09:41</span>
+            <img src="assets/icon-activity.svg" alt="" width="14" height="14">
+          </div>
+          <span class="phone-screen-title">Today's Tasks</span>
+          <div class="phone-task-group">
+            <span class="phone-group-label">Tasks</span>
+            <div class="phone-task-item">Verify safety valves</div>
+            <div class="phone-task-item">Clean assembly bay</div>
+          </div>
+        </div>
+
+        <!-- Phone 2: Submit Progress -->
+        <div class="phone-screen-card">
+          <div class="phone-status-bar">
+            <span>10:15</span>
+            <img src="assets/icon-activity.svg" alt="" width="14" height="14">
+          </div>
+          <span class="phone-screen-title">Submit Progress</span>
+          <div class="phone-task-group">
+            <span class="phone-group-label">Evidence</span>
+            <div class="phone-upload-box">
+              <img src="assets/icon-camera.svg" alt="" width="16" height="16">
+              <span>Tap to upload photo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone 3: My KPI View -->
+        <div class="phone-screen-card">
+          <div class="phone-status-bar">
+            <span>11:30</span>
+            <img src="assets/icon-activity.svg" alt="" width="14" height="14">
+          </div>
+          <span class="phone-screen-title">My KPI View</span>
+          <div class="phone-task-group">
+            <span class="phone-group-label">My Score</span>
+            <div class="phone-score-wrap">
+              <span class="phone-score-val">98%</span>
+              <span class="phone-score-status">Target Achieved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Content & Checklists -->
+      <div class="mobile-copy-right">
+        <div class="section-badge">Mobile Workforce</div>
+        <h2 class="section-title">Keep employees connected wherever work happens</h2>
+        <p class="section-desc">
+          Employees don't need to sit behind a desk to participate in performance management. FactorKPI lets frontline teams submit work, capture evidence, check assignments, and monitor personal performance from mobile devices.
+        </p>
+
+        <div class="mobile-features-list">
+          <div class="m-feat-item">
+            <div class="check-icon-circle">
+              <img src="assets/icon-check-circle.svg" alt="" width="12" height="12">
+            </div>
+            <div>
+              <h4 class="m-feat-title">Daily Task Assignments</h4>
+              <p class="m-feat-desc">See today's tasks, targets, and priorities clearly on shift start.</p>
+            </div>
+          </div>
+
+          <div class="m-feat-item">
+            <div class="check-icon-circle">
+              <img src="assets/icon-check-circle.svg" alt="" width="12" height="12">
+            </div>
+            <div>
+              <h4 class="m-feat-title">Progress &amp; Evidence</h4>
+              <p class="m-feat-desc">Submit updates, notes, photos, and supporting files directly from the floor.</p>
+            </div>
+          </div>
+
+          <div class="m-feat-item">
+            <div class="check-icon-circle">
+              <img src="assets/icon-check-circle.svg" alt="" width="12" height="12">
+            </div>
+            <div>
+              <h4 class="m-feat-title">Fast Approvals</h4>
+              <p class="m-feat-desc">Managers can review operational updates and sign-off quickly.</p>
+            </div>
+          </div>
+
+          <div class="m-feat-item">
+            <div class="check-icon-circle">
+              <img src="assets/icon-check-circle.svg" alt="" width="12" height="12">
+            </div>
+            <div>
+              <h4 class="m-feat-title">Personal KPI View</h4>
+              <p class="m-feat-desc">Employees can see their own targets, scores, and performance history.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Multi-Site Operations Section -->
+  <section class="section product-multisite-section">
+    <div class="section-header">
+      <div class="section-badge">ONE VIEW ACROSS EVERY LOCATION</div>
+      <h2 class="section-title">Manage performance across teams, factories, and sites</h2>
+      <p class="section-desc">Standardize KPI measurement across your organization while allowing every site, department, and team to manage its own operational data.</p>
+    </div>
+
+    <!-- Multi-Site Table Dashboard Frame -->
+    <div class="multisite-panel-frame">
+      <div class="multisite-panel-top">
+        <div>
+          <h3 class="multisite-title">Multi-Site Operations Panel</h3>
+          <span class="multisite-subtitle">Standardized enterprise roll-up</span>
+        </div>
+        <div class="multisite-live-tag">
+          <span class="live-dot-green"></span>
+          <span>ALL SITES ACTIVE</span>
+        </div>
+      </div>
+
+      <div class="multisite-table-responsive">
+        <table class="multisite-table">
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>Performance Score</th>
+              <th>Production Target</th>
+              <th>Task Completion</th>
+              <th>KPI Achievement</th>
+              <th>Safety Incidents</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="location-name">Factory A - Detroit</td>
+              <td><span class="score-tag green">92.4%</span></td>
+              <td>
+                <div class="tbl-progress-bar"><div class="tbl-bar-fill fill-orange" style="width: 92%;"></div></div>
+              </td>
+              <td>98% (124/126)</td>
+              <td>91.2%</td>
+              <td class="text-right"><strong>0</strong></td>
+            </tr>
+            <tr>
+              <td class="location-name">Factory B - Munich</td>
+              <td><span class="score-tag green">88.7%</span></td>
+              <td>
+                <div class="tbl-progress-bar"><div class="tbl-bar-fill fill-orange" style="width: 80%;"></div></div>
+              </td>
+              <td>94% (90/96)</td>
+              <td>88.5%</td>
+              <td class="text-right"><strong>0</strong></td>
+            </tr>
+            <tr>
+              <td class="location-name">Factory C - Shanghai</td>
+              <td><span class="score-tag amber">76.3%</span></td>
+              <td>
+                <div class="tbl-progress-bar"><div class="tbl-bar-fill fill-amber" style="width: 60%;"></div></div>
+              </td>
+              <td>82% (74/90)</td>
+              <td>78.1%</td>
+              <td class="text-right text-amber"><strong>1</strong></td>
+            </tr>
+            <tr>
+              <td class="location-name">Warehouse - Austin</td>
+              <td><span class="score-tag green">94.1%</span></td>
+              <td>
+                <div class="tbl-progress-bar"><div class="tbl-bar-fill fill-green" style="width: 95%;"></div></div>
+              </td>
+              <td>100% (45/45)</td>
+              <td>95.0%</td>
+              <td class="text-right"><strong>0</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3 Bottom Benefit Columns -->
+    <div class="multisite-benefits-row">
+      <div class="ms-benefit-card">
+        <div class="ms-benefit-icon-title">
+          <div class="check-icon-circle green">
+            <img src="assets/icon-check-circle.svg" alt="" width="14" height="14">
+          </div>
+          <h4 class="ms-benefit-title">Standardized KPIs</h4>
+        </div>
+        <p class="ms-benefit-desc">Use consistent performance standards across locations to ensure fair comparison and objective data alignment.</p>
+      </div>
+
+      <div class="ms-benefit-card">
+        <div class="ms-benefit-icon-title">
+          <div class="check-icon-circle green">
+            <img src="assets/icon-check-circle.svg" alt="" width="14" height="14">
+          </div>
+          <h4 class="ms-benefit-title">Site Comparison</h4>
+        </div>
+        <p class="ms-benefit-desc">Quickly identify top-performing and underperforming locations to replicate success models and direct resources efficiently.</p>
+      </div>
+
+      <div class="ms-benefit-card">
+        <div class="ms-benefit-icon-title">
+          <div class="check-icon-circle green">
+            <img src="assets/icon-check-circle.svg" alt="" width="14" height="14">
+          </div>
+          <h4 class="ms-benefit-title">Centralized Control</h4>
+        </div>
+        <p class="ms-benefit-desc">Executives get organization-wide visibility while local site managers maintain localized daily configurations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Roles Section -->
+  <section class="section product-roles-section">
+    <div class="section-header">
+      <div class="section-badge">ROLE-BASED EXPERIENCE</div>
+      <h2 class="section-title">The right information for everyone</h2>
+    </div>
+
+    <div class="roles-cards-row">
+      <!-- Role 1: Executives -->
+      <div class="p-role-card">
+        <div class="p-role-header">
+          <div class="p-role-icon-box orange">
+            <img src="assets/icon-building.svg" alt="" width="20" height="20">
+          </div>
+          <h3 class="p-role-name">Executives: See the organization</h3>
+          <p class="p-role-desc">Understand company-wide performance, compare locations, identify risks, and monitor strategic KPIs.</p>
+        </div>
+        <div class="p-role-mockup">
+          <div class="mockup-header-row">
+            <span class="mock-label">Global OEE Index</span>
+            <span class="mock-tag badge-excellent">EXCELLENT</span>
+          </div>
+          <div class="mockup-stat-row">
+            <span class="mock-stat-val">89.4%</span>
+            <span class="mock-trend green">↑ +2.1% vs target</span>
+          </div>
+          <div class="mockup-sites-row">
+            <span class="site-sub-stat">Detroit: 91%</span>
+            <span class="site-sub-stat">Austin: 88%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 2: Managers -->
+      <div class="p-role-card">
+        <div class="p-role-header">
+          <div class="p-role-icon-box indigo">
+            <img src="assets/icon-users.svg" alt="" width="20" height="20">
+          </div>
+          <h3 class="p-role-name">Managers: Manage execution</h3>
+          <p class="p-role-desc">Assign work, track teams, review operational updates, and act quickly when performance moves off target.</p>
+        </div>
+        <div class="p-role-mockup">
+          <div class="mockup-header-row">
+            <span class="mock-label">Shift Tasks B</span>
+            <span class="mock-tag text-orange">64% Complete</span>
+          </div>
+          <div class="mock-tasks-list">
+            <div class="mock-task-row">
+              <img src="assets/icon-circle-check.svg" alt="" width="14" height="14">
+              <span>Pre-shift calibration</span>
+            </div>
+            <div class="mock-task-row">
+              <img src="assets/icon-circle-arrow-right.svg" alt="" width="14" height="14">
+              <span>Line 3 handoff check</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 3: Employees -->
+      <div class="p-role-card">
+        <div class="p-role-header">
+          <div class="p-role-icon-box green">
+            <img src="assets/icon-smartphone-2.svg" alt="" width="20" height="20">
+          </div>
+          <h3 class="p-role-name">Employees: Your contribution</h3>
+          <p class="p-role-desc">See assignments, targets, KPI performance, feedback, and work history from one clear interface.</p>
+        </div>
+        <div class="p-role-mockup">
+          <div class="mockup-header-row">
+            <span class="mock-label">My Shift Target</span>
+            <span class="mock-stat-sm">94.2%</span>
+          </div>
+          <div class="mock-progress-track">
+            <div class="mock-progress-fill orange" style="width: 94.2%;"></div>
+          </div>
+          <span class="mock-sub-info">+4.8% above historical average</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Business Impact Section -->
+  <section class="section product-impact-section">
+    <div class="section-header">
+      <div class="section-badge">FROM DATA TO ACTION</div>
+      <h2 class="section-title">Less manual tracking. More operational control.</h2>
+    </div>
+
+    <div class="impact-cards-grid">
+      <!-- Impact Card 1 -->
+      <div class="impact-feature-card">
+        <div class="impact-card-top">
+          <h3 class="impact-feature-title">Real-Time Visibility</h3>
+          <img src="assets/icon-eye.svg" alt="" width="24" height="24">
+        </div>
+        <p class="impact-feature-desc">Know how teams and operations are performing without waiting for reports. Get automatic updates on active lines.</p>
+        <div class="impact-mini-bars">
+          <div class="mini-bar" style="height: 20px;"></div>
+          <div class="mini-bar" style="height: 35px;"></div>
+          <div class="mini-bar" style="height: 15px;"></div>
+          <div class="mini-bar" style="height: 28px;"></div>
+          <div class="mini-bar" style="height: 40px;"></div>
+          <div class="mini-bar" style="height: 32px;"></div>
+        </div>
+      </div>
+
+      <!-- Impact Card 2 -->
+      <div class="impact-feature-card">
+        <div class="impact-card-top">
+          <h3 class="impact-feature-title">Greater Accountability</h3>
+          <img src="assets/icon-user-check.svg" alt="" width="24" height="24">
+        </div>
+        <p class="impact-feature-desc">Make responsibilities, targets, tasks, and outcomes clear. Ensure all shift handoffs are tracked and signed off.</p>
+        <div class="impact-mini-lines">
+          <div class="impact-fake-task" style="width: 140px;"></div>
+          <div class="impact-fake-task" style="width: 100px;"></div>
+        </div>
+      </div>
+
+      <!-- Impact Card 3 -->
+      <div class="impact-feature-card">
+        <div class="impact-card-top">
+          <h3 class="impact-feature-title">Faster Decisions</h3>
+          <img src="assets/icon-alert-triangle-orange.svg" alt="" width="24" height="24">
+        </div>
+        <p class="impact-feature-desc">Spot problems and performance gaps before they become bigger issues. Get alerted immediately on critical delays.</p>
+        <div class="impact-alert-badge-wrap">
+          <span class="impact-alert-pill">LINE 3 DELAY</span>
+          <span class="impact-alert-time">Resolved in 14m</span>
+        </div>
+      </div>
+
+      <!-- Impact Card 4 -->
+      <div class="impact-feature-card">
+        <div class="impact-card-top">
+          <h3 class="impact-feature-title">Continuous Improvement</h3>
+          <img src="assets/icon-trending-up-orange.svg" alt="" width="24" height="24">
+        </div>
+        <p class="impact-feature-desc">Use historical performance data to improve processes, optimize schedules, and enhance overall worker productivity.</p>
+        <div class="impact-trend-stat-row">
+          <img src="assets/icon-trending-green.svg" alt="" width="32" height="16">
+          <span class="impact-trend-text">+12.4% vs last quarter</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Interactive Demo Walkthrough Section -->
+  <section class="section product-demo-section" id="demo-video">
+    <div class="section-header">
+      <div class="section-badge">PRODUCT WALKTHROUGH</div>
+      <h2 class="section-title">See FactorKPI in action</h2>
+      <p class="section-desc">Explore how dashboards, KPIs, workflows, reporting, and employee operations work together in one platform.</p>
+    </div>
+
+    <div class="demo-walkthrough-frame">
+      <div class="demo-screen-container">
+        <img src="assets/product-dashboard.png" alt="FactorKPI Product Walkthrough Showcase" class="demo-screenshot" width="902" height="619">
+        <button type="button" class="demo-video-play-btn" aria-label="Play Product Walkthrough Video">
+          <img src="assets/icon-play-solid.svg" alt="" width="72" height="72">
+        </button>
+      </div>
+
+      <!-- Interactive Pills Row -->
+      <div class="demo-pills-row" role="tablist">
+        <button type="button" class="demo-pill-btn active" role="tab" aria-selected="true">Dashboard</button>
+        <button type="button" class="demo-pill-btn" role="tab" aria-selected="false">Shift Entry</button>
+        <button type="button" class="demo-pill-btn" role="tab" aria-selected="false">Reports</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FAQ Section -->
+  <section class="section product-faq-section" id="faq">
+    <div class="section-header">
+      <div class="section-badge">FAQ</div>
+      <h2 class="section-title">Questions about FactorKPI solutions</h2>
+    </div>
+
+    <div class="faq-accordion-list">
+      <!-- Item 1 (Active / Open by default) -->
+      <div class="faq-item active">
+        <button type="button" class="faq-question-btn" aria-expanded="true">
+          <span>What types of businesses use FactorKPI?</span>
+          <img src="assets/icon-chevron-up.svg" alt="" class="faq-chevron" width="16" height="16">
+        </button>
+        <div class="faq-answer-panel">
+          <p>FactorKPI is designed for manufacturing companies, factories, industrial operations, shift-based teams, multi-site organizations, and other businesses that need structured performance management.</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="faq-item">
+        <button type="button" class="faq-question-btn" aria-expanded="false">
+          <span>Can FactorKPI be adapted to our existing processes?</span>
+          <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+        </button>
+        <div class="faq-answer-panel">
+          <p>Yes. FactorKPI is built to support your custom shift schedules, KPI weights, formulas, inspection checklists, and approval hierarchies without forcing a rigid workflow.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="faq-item">
+        <button type="button" class="faq-question-btn" aria-expanded="false">
+          <span>Can we manage multiple factories or locations?</span>
+          <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+        </button>
+        <div class="faq-answer-panel">
+          <p>Absolutely. FactorKPI provides multi-site rollups for executives while allowing each plant, line, or site manager to maintain localized targets, operators, and daily reporting.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="faq-item">
+        <button type="button" class="faq-question-btn" aria-expanded="false">
+          <span>Can FactorKPI track both production and employee performance?</span>
+          <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+        </button>
+        <div class="faq-answer-panel">
+          <p>Yes. FactorKPI bridges machine outputs and frontline human tasks, connecting shift handoffs, quality checks, and equipment downtime with individual and team KPI scoring.</p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="faq-item">
+        <button type="button" class="faq-question-btn" aria-expanded="false">
+          <span>Can frontline workers use FactorKPI?</span>
+          <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+        </button>
+        <div class="faq-answer-panel">
+          <p>Yes. Frontline workers access mobile-friendly interfaces to view shift targets, submit progress, upload photo evidence, and log downtime in seconds.</p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="faq-item">
+        <button type="button" class="faq-question-btn" aria-expanded="false">
+          <span>Can executives and managers have different dashboards?</span>
+          <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+        </button>
+        <div class="faq-answer-panel">
+          <p>Yes. Role-based access ensures executives see high-level cross-site comparisons and OEE trends, while managers see real-time line telemetry, task queues, and shift handoffs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- CTA & Interactive Booking Section -->
+  <section class="cta-section" id="demo">
+    <div class="cta-container">
+      <!-- CTA Left Content -->
+      <div class="cta-copy">
+        <h2 class="cta-heading">Ready to transform your operations?</h2>
+        <p class="cta-desc">Start standardizing data across shift operators, site managers, and executives. Receive your custom implementation roadmap today.</p>
+        <div class="cta-buttons-row">
+          <a href="#bookingCard" class="btn btn-primary btn-cta-book">Book a Demo</a>
+          <a href="mailto:sales@factorkpi.com" class="btn btn-outline-white">Talk to an Expert</a>
+        </div>
+      </div>
+
+      <!-- CTA Right Booking Card -->
+      <div class="booking-card" id="bookingCard">
+        <h3 class="booking-title">Schedule your demo</h3>
+
+        <!-- Weekday Picker -->
+        <div class="weekday-picker" role="radiogroup" aria-label="Select Demo Day">
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="M12">
+            <span class="day-letter">M</span>
+            <span class="date-number">12</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="T13">
+            <span class="day-letter">T</span>
+            <span class="date-number">13</span>
+          </button>
+          <button type="button" class="weekday-col active" role="radio" aria-checked="true" data-day="W14">
+            <span class="day-letter">W</span>
+            <span class="date-number">14</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="T15">
+            <span class="day-letter">T</span>
+            <span class="date-number">15</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="F16">
+            <span class="day-letter">F</span>
+            <span class="date-number">16</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="S17">
+            <span class="day-letter">S</span>
+            <span class="date-number">17</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="S18">
+            <span class="day-letter">S</span>
+            <span class="date-number">18</span>
+          </button>
+        </div>
+
+        <!-- Booking Form -->
+        <form class="booking-form" id="bookingForm" onsubmit="event.preventDefault(); alert('Demo requested successfully! Our team will contact you shortly.');">
+          <div class="form-group">
+            <label for="bookingName" class="sr-only">Name</label>
+            <input type="text" id="bookingName" class="booking-input" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="bookingEmail" class="sr-only">Work Email</label>
+            <input type="email" id="bookingEmail" class="booking-input" placeholder="Work Email" required>
+          </div>
+          <div class="form-group">
+            <label for="bookingCompany" class="sr-only">Company</label>
+            <input type="text" id="bookingCompany" class="booking-input" placeholder="Company" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-confirm-booking">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="footer">
+    <div class="footer-glow-bg" aria-hidden="true">
+      <img src="assets/bg-glow-footer.svg" alt="" class="glow-img">
+    </div>
+
+    <div class="footer-container">
+      <div class="footer-cols">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="./index.html" class="footer-logo-link" aria-label="FactorKPI Home">
+            <img src="assets/factorkpi-footer-logo.png" alt="FactorKPI" class="footer-logo" width="164" height="55">
+          </a>
+          <p class="footer-about">
+            FactorKPI is the category-defining workforce performance intelligence platform designed for high-stakes operational environments.
+          </p>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="footer-nav-groups">
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="./product.html">Overview</a></li>
+              <li><a href="./pricing.html">Pricing</a></li>
+              <li><a href="./product.html#integrations">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Solutions</h4>
+            <ul class="footer-links">
+              <li><a href="./solutions.html">Manufacturing</a></li>
+              <li><a href="./solutions.html">Construction</a></li>
+              <li><a href="./solutions.html">Field Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./about.html#contact">Contact Sales</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Newsletter & Socials -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Join the Performance Newsletter</h4>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to the newsletter!');">
+            <label for="newsletterEmail" class="sr-only">Email address</label>
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="you@company.com" required>
+            <button type="submit" class="btn btn-primary btn-newsletter-submit">Go</button>
+          </form>
+
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-linkedin.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-twitter.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-facebook.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-youtube.svg" alt="" width="18" height="18">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 FactorKPI Technologies Inc. All rights reserved. Metrics clearly labeled as sample data.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+        navToggle.setAttribute('aria-expanded', !expanded);
+        navMenu.classList.toggle('open');
+      });
+    }
+
+    // Weekday picker interaction in Demo Booking card
+    const weekdayButtons = document.querySelectorAll('.weekday-col');
+    weekdayButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        weekdayButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-checked', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-checked', 'true');
+      });
+    });
+
+    // FAQ Accordion interaction
+    const faqButtons = document.querySelectorAll('.faq-question-btn');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !isExpanded);
+        item.classList.toggle('active', !isExpanded);
+      });
+    });
+
+    // Product Walkthrough tab pill buttons
+    const demoPills = document.querySelectorAll('.demo-pill-btn');
+    demoPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        demoPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | FactorKPI - Insights on Shop Floor Intelligence</title>
+  <meta name="description" content="Operational strategies, frontline productivity breakthroughs, and shop floor management articles from industry experts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="./index.html" class="nav-brand" aria-label="FactorKPI Home">
+        <img src="assets/factorkpi-logo.png" alt="FactorKPI Logo" class="brand-logo" width="164" height="55">
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./product.html" class="nav-link">Product</a></li>
+          <li><a href="./solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="./pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="./blog.html" class="nav-link active" aria-current="page">Blog</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+        <div class="nav-actions-mobile">
+          <a href="#demo" class="btn btn-primary btn-book-demo">Book a Demo</a>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#demo" class="btn btn-primary btn-book-demo">Book a Demo</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- 1. Blog Hero Section -->
+    <section class="section blog-hero-section">
+      <div class="blog-hero-container">
+        <div class="section-badge">FACTOR_KPI INSIGHTS</div>
+        <h1 class="blog-hero-title">Ideas, guides, and practical insights for better performance</h1>
+        <p class="blog-hero-desc">
+          Explore practical resources on KPI management, manufacturing performance, production efficiency, workforce performance, reporting, and operational excellence.
+        </p>
+
+        <!-- Search Bar -->
+        <form class="blog-search-bar" role="search" onsubmit="event.preventDefault();">
+          <img src="assets/icon-blog-search.svg" alt="" width="20" height="20" class="blog-search-icon">
+          <input type="text" class="blog-search-input" placeholder="Search articles, guides, KPIs, and topics..." aria-label="Search articles, guides, KPIs, and topics">
+        </form>
+
+        <!-- Topic Filter Pills -->
+        <div class="blog-topic-pills" role="tablist" aria-label="Topic Filters">
+          <button type="button" class="blog-pill active" role="tab" aria-selected="true">Manufacturing KPIs</button>
+          <button type="button" class="blog-pill" role="tab" aria-selected="false">KPI Management</button>
+          <button type="button" class="blog-pill" role="tab" aria-selected="false">Production Performance</button>
+          <button type="button" class="blog-pill" role="tab" aria-selected="false">Employee Performance</button>
+          <button type="button" class="blog-pill" role="tab" aria-selected="false">Operational Excellence</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Featured Article Section -->
+    <section class="section blog-featured-section">
+      <div class="blog-featured-card">
+        <!-- Visual Dashboard Mockup Column -->
+        <div class="blog-featured-visual">
+          <div class="featured-dash-header">
+            <span class="featured-dash-title">OEE & Quality Metrics</span>
+            <span class="featured-dash-badge">Production Level</span>
+          </div>
+          <div class="featured-dash-metrics">
+            <div class="featured-metric-box">
+              <span class="f-metric-label">Availability</span>
+              <span class="f-metric-value orange">94.2%</span>
+            </div>
+            <div class="featured-metric-box">
+              <span class="f-metric-label">Performance</span>
+              <span class="f-metric-value dark">88.7%</span>
+            </div>
+          </div>
+          <div class="featured-dash-chart">
+            <img src="assets/featured-chart-visual.svg" alt="OEE Chart Visualization" width="524" height="100">
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="blog-featured-content">
+          <div class="blog-category-tag">MANUFACTURING KPIs</div>
+          <h2 class="blog-featured-title">25 Manufacturing KPIs Every Factory Should Track</h2>
+          <p class="blog-featured-excerpt">
+            A practical guide to the production, quality, efficiency, workforce, and operational KPIs manufacturing teams can use to measure and improve performance.
+          </p>
+          <div class="blog-author-meta">
+            <img src="assets/blog-author-avatar.png" alt="FactorKPI Team" width="36" height="36" class="blog-avatar-img">
+            <div class="blog-author-info">
+              <span class="blog-author-name">FactorKPI Team</span>
+              <span class="blog-read-time">12 min read • Updated Aug 2026</span>
+            </div>
+          </div>
+          <div class="blog-featured-action">
+            <a href="#article" class="blog-link-arrow">
+              <span>Read the Guide</span>
+              <img src="assets/icon-arrow-orange.svg" alt="" width="16" height="16">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Latest Articles Grid Section -->
+    <section class="section blog-latest-section" id="articles">
+      <div class="blog-latest-container">
+        <div class="blog-section-header">
+          <span class="blog-section-tag">LATEST INSIGHTS</span>
+          <h2 class="blog-section-title">Latest from FactorKPI</h2>
+        </div>
+
+        <div class="blog-articles-grid">
+          <!-- Article 1 -->
+          <article class="blog-post-card">
+            <div class="blog-post-thumb">
+              <img src="assets/blog-post-1.png" alt="What Is KPI Management? A Practical Guide" loading="lazy">
+            </div>
+            <div class="blog-post-body">
+              <span class="blog-post-author-tag">FactorKPI team</span>
+              <h3 class="blog-post-title">What Is KPI Management? A Practical Guide</h3>
+              <p class="blog-post-excerpt">Learn how KPI management works, how to create effective KPIs, and turn performance data into action.</p>
+              <div class="blog-post-footer">
+                <span class="blog-post-readtime">10 min read</span>
+                <a href="#article-1" class="btn-read-more">Read more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-post-card">
+            <div class="blog-post-thumb">
+              <img src="assets/blog-post-2.png" alt="15 Production KPIs Every Team Should Monitor" loading="lazy">
+            </div>
+            <div class="blog-post-body">
+              <span class="blog-post-author-tag">FactorKPI team</span>
+              <h3 class="blog-post-title">15 Production KPIs Every Team Should Monitor</h3>
+              <p class="blog-post-excerpt">Explore key production metrics for output, efficiency, downtime, quality, and target achievement.</p>
+              <div class="blog-post-footer">
+                <span class="blog-post-readtime">11 min read</span>
+                <a href="#article-2" class="btn-read-more">Read more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-post-card">
+            <div class="blog-post-thumb">
+              <img src="assets/blog-post-3.png" alt="How to Calculate Production Efficiency" loading="lazy">
+            </div>
+            <div class="blog-post-body">
+              <span class="blog-post-author-tag">FactorKPI team</span>
+              <h3 class="blog-post-title">How to Calculate Production Efficiency</h3>
+              <p class="blog-post-excerpt">Understand the production efficiency formula, calculation examples, and how to interpret results.</p>
+              <div class="blog-post-footer">
+                <span class="blog-post-readtime">7 min read</span>
+                <a href="#article-3" class="btn-read-more">Read more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="blog-post-card">
+            <div class="blog-post-thumb">
+              <img src="assets/blog-post-4.png" alt="How to Set Employee KPIs That Work" loading="lazy">
+            </div>
+            <div class="blog-post-body">
+              <span class="blog-post-author-tag">FactorKPI team</span>
+              <h3 class="blog-post-title">How to Set Employee KPIs That Work</h3>
+              <p class="blog-post-excerpt">Create measurable employee KPIs that connect daily responsibilities with business outcomes.</p>
+              <div class="blog-post-footer">
+                <span class="blog-post-readtime">9 min read</span>
+                <a href="#article-4" class="btn-read-more">Read more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="blog-post-card">
+            <div class="blog-post-thumb">
+              <img src="assets/blog-post-5.png" alt="Replacing Manual Operational Reporting" loading="lazy">
+            </div>
+            <div class="blog-post-body">
+              <span class="blog-post-author-tag">FactorKPI team</span>
+              <h3 class="blog-post-title">Replacing Manual Operational Reporting</h3>
+              <p class="blog-post-excerpt">A practical approach to reducing spreadsheet dependency and improving operational visibility.</p>
+              <div class="blog-post-footer">
+                <span class="blog-post-readtime">8 min read</span>
+                <a href="#article-5" class="btn-read-more">Read more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="blog-post-card">
+            <div class="blog-post-thumb">
+              <img src="assets/blog-post-6.png" alt="KPI Dashboard Examples for Manufacturing" loading="lazy">
+            </div>
+            <div class="blog-post-body">
+              <span class="blog-post-author-tag">FactorKPI team</span>
+              <h3 class="blog-post-title">KPI Dashboard Examples for Manufacturing</h3>
+              <p class="blog-post-excerpt">See how effective KPI dashboards organize production, workforce, and operational data.</p>
+              <div class="blog-post-footer">
+                <span class="blog-post-readtime">9 min read</span>
+                <a href="#article-6" class="btn-read-more">Read more</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="blog-latest-actions">
+          <a href="#all-articles" class="btn btn-outline-dark btn-view-all">View All Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Content Cluster Section -->
+    <section class="section blog-cluster-section">
+      <div class="blog-cluster-container">
+        <div class="blog-cluster-header">
+          <div class="section-badge">START WITH MANUFACTURING PERFORMANCE</div>
+          <h2 class="blog-section-title">Everything you need to improve manufacturing KPI management</h2>
+        </div>
+
+        <div class="blog-cluster-grid">
+          <!-- Big Guide Card (Left) -->
+          <div class="cluster-guide-card">
+            <div class="cluster-guide-thumb">
+              <img src="assets/blog-guide-card.png" alt="Manufacturing KPIs Guide" loading="lazy">
+            </div>
+            <span class="cluster-guide-tag">ULTIMATE GUIDE</span>
+            <h3 class="cluster-guide-title">Manufacturing KPIs: The Complete Guide</h3>
+            <p class="cluster-guide-desc">
+              Our most comprehensive guide outlining the foundations of building a reliable performance framework for modern production lines.
+            </p>
+            <a href="#complete-guide" class="blog-link-arrow">
+              <span>Read Complete Guide</span>
+              <img src="assets/icon-arrow-orange.svg" alt="" width="16" height="16">
+            </a>
+          </div>
+
+          <!-- Article List (Right) -->
+          <div class="cluster-links-list">
+            <div class="cluster-link-row">
+              <h4 class="cluster-link-title">25 Manufacturing KPI Examples</h4>
+              <a href="#examples" class="blog-link-arrow">
+                <span>Read Article</span>
+                <img src="assets/icon-arrow-orange.svg" alt="" width="16" height="16">
+              </a>
+            </div>
+
+            <div class="cluster-link-row">
+              <h4 class="cluster-link-title">How to Calculate Production Efficiency</h4>
+              <a href="#efficiency" class="blog-link-arrow">
+                <span>Read Article</span>
+                <img src="assets/icon-arrow-orange.svg" alt="" width="16" height="16">
+              </a>
+            </div>
+
+            <div class="cluster-link-row">
+              <h4 class="cluster-link-title">Production Target vs Actual: How to Measure</h4>
+              <a href="#target-actual" class="blog-link-arrow">
+                <span>Read Article</span>
+                <img src="assets/icon-arrow-orange.svg" alt="" width="16" height="16">
+              </a>
+            </div>
+
+            <div class="cluster-link-row">
+              <h4 class="cluster-link-title">How to Build a Manufacturing KPI Dashboard</h4>
+              <a href="#dashboard" class="blog-link-arrow">
+                <span>Read Article</span>
+                <img src="assets/icon-arrow-orange.svg" alt="" width="16" height="16">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Insight to Action Section -->
+    <section class="section blog-action-section">
+      <div class="blog-action-container">
+        <!-- Left Copy -->
+        <div class="blog-action-copy">
+          <div class="section-badge">PUT YOUR KPIs INTO ACTION</div>
+          <h2 class="blog-action-title">Reading about KPIs is the first step. Managing them effectively is the next.</h2>
+          <p class="blog-action-desc">
+            FactorKPI bridges the gap between raw data and operational success. Transition from static spreadsheet models to a live, automated ecosystem.
+          </p>
+
+          <ul class="blog-checklist">
+            <li class="blog-check-item">
+              <span class="blog-check-icon">
+                <img src="assets/icon-check-orange.svg" alt="" width="12" height="12">
+              </span>
+              <span>Track KPIs in real time across shifts</span>
+            </li>
+            <li class="blog-check-item">
+              <span class="blog-check-icon">
+                <img src="assets/icon-check-orange.svg" alt="" width="12" height="12">
+              </span>
+              <span>Connect daily work with direct performance output</span>
+            </li>
+            <li class="blog-check-item">
+              <span class="blog-check-icon">
+                <img src="assets/icon-check-orange.svg" alt="" width="12" height="12">
+              </span>
+              <span>Automate complex operational reporting requirements</span>
+            </li>
+            <li class="blog-check-item">
+              <span class="blog-check-icon">
+                <img src="assets/icon-check-orange.svg" alt="" width="12" height="12">
+              </span>
+              <span>Identify performance and delay gaps faster</span>
+            </li>
+          </ul>
+
+          <div class="blog-action-btns">
+            <a href="./product.html" class="btn btn-primary">Explore FactorKPI</a>
+            <a href="#demo" class="btn btn-outline-dark">Book a Demo</a>
+          </div>
+        </div>
+
+        <!-- Right Dashboard Mockup -->
+        <div class="blog-action-mockup">
+          <div class="action-dash-card">
+            <div class="action-dash-header">
+              <span class="action-dash-title">Active Site Overview</span>
+              <span class="action-live-badge">LIVE UPDATES</span>
+            </div>
+            <div class="action-dash-rows">
+              <div class="action-metric-row">
+                <span class="action-metric-name">Production Achievement</span>
+                <span class="action-metric-val orange">96.4%</span>
+              </div>
+              <div class="action-metric-row">
+                <span class="action-metric-name">Quality Reject Rate</span>
+                <span class="action-metric-val dark">0.8%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Newsletter Subscription Section -->
+    <section class="section blog-newsletter-section">
+      <div class="blog-newsletter-card">
+        <div class="section-badge">FACTOR_KPI INSIGHTS</div>
+        <h2 class="newsletter-title">Get practical performance insights in your inbox</h2>
+        <p class="newsletter-desc">Occasional guides, KPI examples, templates, and operational performance insights.</p>
+        
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to FactorKPI Insights!');">
+          <input type="email" class="newsletter-input" placeholder="Enter your work email..." required aria-label="Work Email Address">
+          <button type="submit" class="btn btn-primary btn-newsletter">Subscribe</button>
+        </form>
+        <span class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</span>
+      </div>
+    </section>
+
+    <!-- 7. FAQ Section -->
+    <section class="section sol-faq-section" id="faq">
+      <div class="section-header">
+        <div class="section-badge">FAQ</div>
+        <h2 class="section-title">Questions about FactorKPI solutions</h2>
+      </div>
+
+      <div class="faq-accordion-list">
+        <!-- Item 1 (Active / Open by default) -->
+        <div class="faq-item active">
+          <button type="button" class="faq-question-btn" aria-expanded="true">
+            <span>What types of businesses use FactorKPI?</span>
+            <img src="assets/icon-chevron-up.svg" alt="" class="faq-chevron" width="16" height="16">
+          </button>
+          <div class="faq-answer-panel">
+            <p>FactorKPI is designed for manufacturing companies, factories, industrial operations, shift-based teams, multi-site organizations, and other businesses that need structured performance management.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn" aria-expanded="false">
+            <span>Can FactorKPI be adapted to our existing processes?</span>
+            <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+          </button>
+          <div class="faq-answer-panel">
+            <p>Yes. FactorKPI is built to support your custom shift schedules, KPI weights, formulas, inspection checklists, and approval hierarchies without forcing a rigid workflow.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn" aria-expanded="false">
+            <span>Can we manage multiple factories or locations?</span>
+            <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+          </button>
+          <div class="faq-answer-panel">
+            <p>Absolutely. FactorKPI provides multi-site rollups for executives while allowing each plant, line, or site manager to maintain localized targets, operators, and daily reporting.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn" aria-expanded="false">
+            <span>Can FactorKPI track both production and employee performance?</span>
+            <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+          </button>
+          <div class="faq-answer-panel">
+            <p>Yes. FactorKPI bridges machine outputs and frontline human tasks, connecting shift handoffs, quality checks, and equipment downtime with individual and team KPI scoring.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn" aria-expanded="false">
+            <span>Can frontline workers use FactorKPI?</span>
+            <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+          </button>
+          <div class="faq-answer-panel">
+            <p>Yes. Frontline workers access mobile-friendly interfaces to view shift targets, submit progress, upload photo evidence, and log downtime in seconds.</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn" aria-expanded="false">
+            <span>Can executives and managers have different dashboards?</span>
+            <img src="assets/icon-chevron-down.svg" alt="" class="faq-chevron" width="16" height="16">
+          </button>
+          <div class="faq-answer-panel">
+            <p>Yes. Role-based permissions ensure that executives see macro site comparisons and KPI summaries, while supervisors get hour-by-hour shift logs, machine alerts, and line metrics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CTA & Interactive Booking Section -->
+  <section class="cta-section" id="demo">
+    <div class="cta-container">
+      <!-- CTA Left Content -->
+      <div class="cta-copy">
+        <h2 class="cta-heading">Ready to transform your operations?</h2>
+        <p class="cta-desc">Start standardizing data across shift operators, site managers, and executives. Receive your custom implementation roadmap today.</p>
+        <div class="cta-buttons-row">
+          <a href="#bookingCard" class="btn btn-primary btn-cta-book">Book a Demo</a>
+          <a href="mailto:sales@factorkpi.com" class="btn btn-outline-white">Talk to an Expert</a>
+        </div>
+      </div>
+
+      <!-- CTA Right Booking Card -->
+      <div class="booking-card" id="bookingCard">
+        <h3 class="booking-title">Schedule your demo</h3>
+
+        <!-- Weekday Picker -->
+        <div class="weekday-picker" role="radiogroup" aria-label="Select Demo Day">
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="M12">
+            <span class="day-letter">M</span>
+            <span class="date-number">12</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="T13">
+            <span class="day-letter">T</span>
+            <span class="date-number">13</span>
+          </button>
+          <button type="button" class="weekday-col active" role="radio" aria-checked="true" data-day="W14">
+            <span class="day-letter">W</span>
+            <span class="date-number">14</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="T15">
+            <span class="day-letter">T</span>
+            <span class="date-number">15</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="F16">
+            <span class="day-letter">F</span>
+            <span class="date-number">16</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="S17">
+            <span class="day-letter">S</span>
+            <span class="date-number">17</span>
+          </button>
+          <button type="button" class="weekday-col" role="radio" aria-checked="false" data-day="S18">
+            <span class="day-letter">S</span>
+            <span class="date-number">18</span>
+          </button>
+        </div>
+
+        <!-- Booking Form -->
+        <form class="booking-form" id="bookingForm" onsubmit="event.preventDefault(); alert('Demo requested successfully! Our team will contact you shortly.');">
+          <div class="form-group">
+            <label for="bookingName" class="sr-only">Name</label>
+            <input type="text" id="bookingName" class="booking-input" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="bookingEmail" class="sr-only">Work Email</label>
+            <input type="email" id="bookingEmail" class="booking-input" placeholder="Work Email" required>
+          </div>
+          <div class="form-group">
+            <label for="bookingCompany" class="sr-only">Company</label>
+            <input type="text" id="bookingCompany" class="booking-input" placeholder="Company" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-confirm-booking">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="footer">
+    <div class="footer-glow-bg" aria-hidden="true">
+      <img src="assets/bg-glow-footer.svg" alt="" class="glow-img">
+    </div>
+
+    <div class="footer-container">
+      <div class="footer-cols">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="./index.html" class="footer-logo-link" aria-label="FactorKPI Home">
+            <img src="assets/factorkpi-footer-logo.png" alt="FactorKPI" class="footer-logo" width="164" height="55">
+          </a>
+          <p class="footer-about">
+            FactorKPI is the category-defining workforce performance intelligence platform designed for high-stakes operational environments.
+          </p>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="footer-nav-groups">
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="./product.html">Overview</a></li>
+              <li><a href="./pricing.html">Pricing</a></li>
+              <li><a href="./product.html#integrations">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Solutions</h4>
+            <ul class="footer-links">
+              <li><a href="./solutions.html">Manufacturing</a></li>
+              <li><a href="./solutions.html">Construction</a></li>
+              <li><a href="./solutions.html">Field Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./about.html#contact">Contact Sales</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Newsletter & Socials -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Join the Performance Newsletter</h4>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to the newsletter!');">
+            <label for="newsletterEmail" class="sr-only">Email address</label>
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="you@company.com" required>
+            <button type="submit" class="btn btn-primary btn-newsletter-submit">Go</button>
+          </form>
+
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-linkedin.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-twitter.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-facebook.svg" alt="" width="18" height="18">
+            </a>
+            <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icon-youtube.svg" alt="" width="18" height="18">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 FactorKPI Technologies Inc. All rights reserved. Metrics clearly labeled as sample data.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+        navToggle.setAttribute('aria-expanded', !expanded);
+        navMenu.classList.toggle('open');
+      });
+    }
+
+    // Weekday picker interaction in Demo Booking card
+    const weekdayButtons = document.querySelectorAll('.weekday-col');
+    weekdayButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        weekdayButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-checked', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-checked', 'true');
+      });
+    });
+    // FAQ Accordion interaction
+    const faqButtons = document.querySelectorAll('.faq-question-btn');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !isExpanded);
+        item.classList.toggle('active', !isExpanded);
+      });
+    });
+
+    // Topic Pill interaction
+    const topicPills = document.querySelectorAll('.blog-pill');
+    topicPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        topicPills.forEach(p => {
+          p.classList.remove('active');
+          p.setAttribute('aria-selected', 'false');
+        });
+        pill.classList.add('active');
+        pill.setAttribute('aria-selected', 'true');
+      });
+    });
+  </script>
+</body>
+</html>
